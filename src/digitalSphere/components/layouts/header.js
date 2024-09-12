@@ -36,11 +36,11 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="nav-menu collapse navbar-collapse" id="navbarTogglerDemo02">
-            <span className="nav-menu-item">Home</span>
-            <span className="nav-menu-item">About Us</span>
-            <span className="nav-menu-item">Service</span>
-            <span className="nav-menu-item">Blog</span>
-            <span className="me-0 nav-menu-item">Contact Us</span>
+            <span className="nav-menu-item nav-active">Home</span>
+            <span className="nav-menu-item nav-inActive">About Us</span>
+            <span className="nav-menu-item nav-inActive">Service</span>
+            <span className="nav-menu-item nav-inActive">Blog</span>
+            <span className="me-0 nav-menu-item nav-inActive">Contact Us</span>
           </div>
         </Container>
       </nav>

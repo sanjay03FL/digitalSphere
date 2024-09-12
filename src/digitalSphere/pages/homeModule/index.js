@@ -358,14 +358,67 @@ const HomeModule = () => {
       </React.Fragment>
       <React.Fragment>
         <div className={styles.sectionFiveth}>
-          <h5 className="mb-3">Ready to Boost Your Business?</h5>
-          <h3 className="mb-2">IS YOUR LAPTOP FEELING LAGGY IN FLORIDA? UNMASK TECH</h3>
-          <h4 style={{ marginBottom: "2rem" }}>TROUBLES WITH DigitalSphere!</h4>
-          <p style={{ marginBottom: "2rem" }}>UNVEILING YOUR LAPTOP’S MYSTERIES: COMMON ISSUES AND SOLUTIONS</p>
+          <h5 className={styles.title}>Ready to Boost Your Business?</h5>
+          <h3 className="mb-2">Is your laptop feeling laggy in florida? unmask tech</h3>
+          <h4 style={{ marginBottom: "2rem" }}>Troubles with DigitalSphere!!!</h4>
+          <p style={{ marginBottom: "2rem" }}>Unveiling your laptop’s mysteries: common issues and solutions</p>
           <div className="d-flex justify-content-center pt-4 pb-4">
             <Button className="secondaryBtn me-4">Book A Meeting</Button>
             <Button className="primaryBtn">Download Now</Button>
           </div>
+        </div>
+        <div className={`${styles.curveImg} ${styles.curveImgBottom}`}></div>
+      </React.Fragment>
+      <React.Fragment>
+        <div className={styles.sectionSixth}>
+          <Container className={styles.containerSixth}>
+            <h5 className={styles.title}>Latest Articles</h5>
+            <div style={{ marginBottom: "3rem" }} data-aos="zoom-in-up">
+              <h3 className="mb-3" style={{ color: "#03045e" }}>
+                7Slots Casino’da Canlı Casino Deneyimi
+              </h3>
+              <span className="d-flex mb-4" style={{ color: "#0077b6" }}>
+                <h5>September 10, 2024</h5>&nbsp;
+                <h5>• admin</h5>
+              </span>
+              <p>
+                Содержимое 7Slots Casino’da Canlı Casino Oyunları Canlı Rulet Nasıl Oynanır? Oyunun Temelleri
+                Stratejiler ve İpuçları Blackjack Stratejileri Poker Türleri ve Kuralları Popüler Poker Türleri Poker
+                Oynama Stratejileri 7Slots Giriş Bonusları ve Promosyonları Hoşgeldin Bonusu Nedir? Hoşgeldin Bonusu Ne
+                İşe Yarar? Hoşgeldin Bonusu Nasıl Alınır? Günlük Promosyonlar ve Ödüller Günlük Teklifler…
+              </p>
+            </div>
+            <div style={{ marginBottom: "3rem" }} data-aos="zoom-in-up">
+              <h3 className="mb-3" style={{ color: "#03045e" }}>
+                CIPA Safe Pharmacies
+              </h3>
+              <span className="d-flex mb-4" style={{ color: "#0077b6" }}>
+                <h5>September 9, 2024</h5>&nbsp;
+                <h5>• admin</h5>
+              </span>
+              <p>
+                CIPA Safe Pharmacies Sildenafil, sold under the brand name Viagra, among others, is a medication used to
+                treat erectile dysfunction and pulmonary arterial hypertension. It is also sometimes used off-label for
+                the treatment of certain symptoms in secondary Raynaud’s phenomenon. If you buy sildenafil for erectile
+                dysfunction, it can also…
+              </p>
+            </div>
+            <div style={{ marginBottom: "3rem" }} data-aos="zoom-in-up">
+              <h3 className="mb-3" style={{ color: "#03045e" }}>
+                Cialis vs. Viagra: Which Is Best? – Healthline
+              </h3>
+              <span className="d-flex mb-4" style={{ color: "#0077b6" }}>
+                <h5>September 9, 2024</h5>&nbsp;
+                <h5>• admin</h5>
+              </span>
+              <p>
+                Cialis vs. Viagra: Which Is Best? – Healthline tadalafil (Cialis) avanafil (Stendra) All of these
+                medicines work by relaxing smooth muscles and increasing blood flow in the penis during sexual
+                stimulation. You should not take Without physical action to the penis, such as that occurring during
+                sexual intercourse, tadalafil will…
+              </p>
+            </div>
+          </Container>
         </div>
       </React.Fragment>
     </React.Fragment>

@@ -1,0 +1,29 @@
+.sectionFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.sectionCol1 {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.sectionCol {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.sectionCol1 > h5,
+.sectionCol > h5 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.sectionCol1 > p,
+.sectionCol > p {
+  font-size: 14px;
+}
+.lastSectionFooter {
+  border-top: 1px outset #caf0f8;
+  text-align: center;
+  padding: 1rem;
+}
