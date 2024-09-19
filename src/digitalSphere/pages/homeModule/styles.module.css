@@ -1,25 +1,25 @@
-.mySwiperFirstSection {
+/* .mySwiperFirstSection {
   width: 100%;
   height: 500px;
   object-fit: cover;
-}
-.swiperImg {
+} */
+/* .swiperImg {
   filter: brightness(0.5);
-}
+} */
 
-.swiper {
+/* .swiper {
   width: 100%;
   height: 500px;
   background: #000;
-}
+} */
 
-.swiper-slide {
+/* .swiper-slide {
   font-size: 18px;
   color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 60px;
-}
+} */
 
 .parallaxBg {
   position: absolute;
@@ -32,21 +32,15 @@
   background-position: center;
 }
 
-.swiperTitle {
+/* .swiperTitle {
   font-size: 41px;
   font-weight: 300;
-}
+} */
 
 .swiperSubtitle {
   font-size: 21px;
 }
 
-.swiperText {
-  font-size: 14px;
-  max-width: 600px;
-  line-height: 1.5;
-  margin-top: 1rem;
-}
 .secondLayer {
   display: flex;
   justify-content: space-between;
@@ -67,10 +61,12 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset !important;
 }
+
 .boxContent {
-  background-color: #03045e;
+  background-color: #013160;
   color: #fff;
   padding: 1rem;
+  font-size: 14px !important;
 }
 .sectionThird {
   background-color: #caf0f8;
@@ -87,9 +83,17 @@
 }
 
 .sectionThirdImg {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
+
+  /* background-image: url("../../assets/images/png&jpg/businessGuy.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  /* filter: brightness(0.8); */
+  background-attachment: fixed !important;
+  /* position: relative; */
 }
 
 .sectionThird .title {
@@ -99,31 +103,34 @@
   /* text-align: center; */
 }
 .sectionFourth {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../assets/images/png&jpg/motherBoardDark.png");
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-position: center !important;
+  background-position: center !important; */
   /* filter: brightness(0.8); */
-  background-attachment: fixed !important;
+  /* background-attachment: fixed !important; */
+  /* position: relative; */
+  background-color: #212529;
+  color: #fff;
+}
+.sectionFourth > .imageBanner {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   position: relative;
 }
-.sectionFourth .imageBanner {
-  margin-top: 2rem;
-  margin-bottom: 6rem;
-  position: relative;
-}
-.sectionFourth .title {
-  text-shadow: 7px -8px 8px rgba(177, 173, 179, 1);
+.sectionFourth > .imageBanner > .container > .title {
+  font-family: "Poppins-Bold" !important;
+  /* text-shadow: 7px -8px 8px rgba(177, 173, 179, 1); */
   /* background-color: rgba(254, 173, 255, 0.1); */
   color: rgba(255, 255, 255, 1);
-  font-size: 42px;
-  margin-bottom: 3rem;
+  /* font-size: 42px; */
+  margin-bottom: 2rem;
 }
 .sectionFourth .details {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   color: rgba(255, 255, 255, 1);
-  font-size: 22px;
+  font-size: 14px;
 }
 .sectionFourth .keyPoints {
   color: var(--topHeader1Background);
@@ -143,10 +150,18 @@
   bottom: 0;
 }
 .sectionFiveth {
-  background-color: #0077b6 !important;
+  background-image: url("../../assets/images/png&jpg/motherBoard.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-blend-mode: saturation;
+  /* background-color: #013160 !important; */
+  background-color: #013160bf !important;
   text-align: center;
   padding: 2rem;
   text-transform: capitalize !important;
+  color: #fff !important;
+  padding: 4rem 0 !important;
 }
 
 .sectionFiveth > .title {
@@ -156,6 +171,10 @@
   line-height: 1.2em;
   color: #fff;
   margin-bottom: 1.5rem;
+}
+.sectionFiveth > .btn {
+  display: flex;
+  justify-content: center;
 }
 .curveImgBottom {
   position: relative !important;
@@ -173,7 +192,7 @@
   margin-top: 3rem;
   font-weight: 700;
   width: 100%;
-  opacity: 0.09;
+  opacity: 0.09 !important;
   color: #03045e;
   /* -webkit-transform: translate(-50%, 0);
   -moz-transform: translate(-50%, 0);
@@ -183,4 +202,185 @@
   font-size: 100px;
   /* display: block; */
   margin-bottom: 2.5rem;
+}
+
+.swiperContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.swiperImgTop {
+  width: 100%;
+  height: 600px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  filter: brightness(0.9);
+}
+.img1 > .swiperContainer {
+  align-items: start;
+}
+.img2 > .swiperContainer {
+  align-items: end;
+}
+.swiperTitle {
+  font-family: "Poppins-Bold" !important;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 3px 3px 4px #013160;
+}
+
+.swiperText {
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 600px;
+  margin-top: 1rem;
+  text-shadow: 7px -8px 8px #013160;
+  /* color: #fff;
+  letter-spacing: 0.1rem;
+  background-color: #03045e38; */
+  /* background-color: #ffffff30; */
+
+  color: #000000;
+  letter-spacing: 0.08rem;
+  background-color: #dee2e66e;
+}
+.img1 > .swiperContainer > .swiperText {
+  text-align: start;
+}
+.img2 > .swiperContainer > .swiperText {
+  text-align: end;
+}
+.sectionCommitment {
+  display: flex;
+}
+.sectionCommitment > .imgContainer {
+  background-image: url("../../assets/images/png&jpg/planning.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  /* filter: brightness(0.8); */
+  background-attachment: fixed !important;
+  position: relative;
+  height: 350px;
+}
+.sectionCommitment > .textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.sectionCommitment > .textContainer > .heading {
+  font-family: "Poppins-Bold" !important;
+  margin-bottom: 2rem;
+}
+.sectionCommitment > .textContainer > .points {
+  color: #777 !important;
+}
+
+.sectionTwo {
+  background-color: #f4f4f4 !important;
+}
+.sectionTwo > .container {
+  padding: 2rem 0;
+}
+.sectionTwo > .container > span > h1,
+.sectionTwo > .container > div > h1 {
+  font-family: "Poppins-SemiBold" !important;
+}
+.sectionTwo > .container > span > p {
+  color: #777 !important;
+}
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+}
+.blogContainer > .date {
+  width: fit-content;
+  padding: 0.2rem 1.2rem;
+  background-color: #013160;
+  color: #fff;
+  text-align: center;
+}
+.blogContainer > .date > p {
+  margin-bottom: 0 !important;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
+}
+.blogContainer > .date > span {
+  letter-spacing: 0.15rem;
+  font-size: 12px !important;
+}
+.blogContainer > .blogUser {
+  font-size: 14px !important;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 0 !important;
+}
+.blogContainer > .blogTitle {
+  font-family: "Poppins-Bold" !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
+  height: 70px;
+  max-height: 4.5em;
+  line-height: 1.5em;
+}
+.blogContainer > .blogPoints {
+  color: #777;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: pre-wrap;
+  height: 80px;
+  max-height: 4.5em; /* Limit height based on line height */
+  line-height: 1.5em; /* Set the line height (1.5em is typical) */
+}
+.blogContainer > .viewMore {
+  color: #013160;
+  font-size: 14px !important;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1023px) {
+  .swiperImgTop {
+    height: 400px;
+  }
+  .swiperImgTop > .swiperContainer > .swiperTitle {
+    font-size: 32px;
+  }
+  .swiperImgTop > .swiperContainer > .swiperText {
+    font-size: 12px;
+  }
+
+  .sectionTwo > .container {
+    padding: 2rem;
+  }
+  .sectionCommitment > .imgContainer {
+    height: 500px;
+  }
+  .sectionFiveth > .title {
+    font-size: 38px;
+  }
+  .sectionFiveth > h4 {
+    font-size: 18px !important;
+  }
+  .sectionFiveth > p {
+    font-size: 14px !important;
+  }
+  .sectionFiveth > .btn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionSixth > .containerSixth > .title {
+    font-size: 50px;
+  }
 }

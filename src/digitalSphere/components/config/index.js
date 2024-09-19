@@ -16,6 +16,8 @@ import FacebookSVGIcon from "../../assets/images/svg/facebook.svg";
 import TwitterSvgIcon from "../../assets/images/svg/twitter.svg";
 import LinkedinSVGIcon from "../../assets/images/svg/linkedin.svg";
 import InstragramSvgIcon from "../../assets/images/svg/instagram.svg";
+import ManServiceLapGif from "../../assets/images/png&jpg/manServiceLaptop.gif";
+import ServiceBanner from "../../assets/images/png&jpg/serviceBanner.jpg";
 export {
   PhoneSvgIcon,
   MailSvgIcon,
@@ -34,4 +36,6 @@ export {
   TwitterSvgIcon,
   LinkedinSVGIcon,
   InstragramSvgIcon,
+  ManServiceLapGif,
+  ServiceBanner,
 };

@@ -1,11 +1,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { MailSvgIcon, PhoneSvgIcon, SphereSvgIcon } from "../config";
-
+import styles from "../layouts/style.module.css";
 const Header = () => {
   return (
     <React.Fragment>
-      <div className="top-header">
+      <div className={`top-header ${styles.headerTop}`}>
         <Container className="d-flex justify-content-between">
           <div className="me-5">
             <img className="top-header-phone" src={PhoneSvgIcon} width={25} height={25} alt="contact" />
@@ -18,11 +18,11 @@ const Header = () => {
           </div>
         </Container>
       </div>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light top-footer">
+      <nav className={`navbar sticky-top navbar-expand-lg navbar-light ${styles.headerBottom}`}>
         <Container>
           <div className="d-flex align-items-center">
             <img className="top-footer-sphere me-1" src={SphereSvgIcon} width={60} height={60} alt="sphere" />
-            &nbsp; <span className="top-footer-title">DigitalSphere</span>
+            &nbsp; <span className={styles.headerBottomTitle}>DIGITALSPHERE</span>
           </div>
           <button
             className="navbar-toggler"
@@ -35,12 +35,12 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="nav-menu collapse navbar-collapse" id="navbarTogglerDemo02">
-            <span className="nav-menu-item nav-active">Home</span>
-            <span className="nav-menu-item nav-inActive">About Us</span>
-            <span className="nav-menu-item nav-inActive">Service</span>
-            <span className="nav-menu-item nav-inActive">Blog</span>
-            <span className="me-0 nav-menu-item nav-inActive">Contact Us</span>
+          <div className={`nav-menu collapse navbar-collapse ${styles.navMenu}`} id="navbarTogglerDemo02">
+            <span className={`nav-menu-item ${styles.navItem} ${styles.navActiveItem}`}>Home</span>
+            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}>About Us</span>
+            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}>Service</span>
+            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}>Blog</span>
+            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem} me-0`}>Contact Us</span>
           </div>
         </Container>
       </nav>
