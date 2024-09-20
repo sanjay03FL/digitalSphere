@@ -271,8 +271,8 @@
   background-attachment: fixed !important;
   position: relative;
   height: 350px;
-  background-color: #94bfe842;
-  background-blend-mode: exclusion;
+  /* background-color: #94bfe842;
+  background-blend-mode: exclusion; */
 }
 .sectionCommitment > .textContainer {
   display: flex;
