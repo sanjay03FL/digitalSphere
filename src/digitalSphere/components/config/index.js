@@ -18,6 +18,8 @@ import LinkedinSVGIcon from "../../assets/images/svg/linkedin.svg";
 import InstragramSvgIcon from "../../assets/images/svg/instagram.svg";
 import ManServiceLapGif from "../../assets/images/png&jpg/manServiceLaptop.gif";
 import ServiceBanner from "../../assets/images/png&jpg/serviceBanner.jpg";
+import ServiceCpuBanner from "../../assets/images/png&jpg/checkingCpu.webp";
+
 export {
   PhoneSvgIcon,
   MailSvgIcon,
@@ -38,4 +40,5 @@ export {
   InstragramSvgIcon,
   ManServiceLapGif,
   ServiceBanner,
+  ServiceCpuBanner,
 };

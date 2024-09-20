@@ -20,6 +20,7 @@ import {
   CheckSvgIcon,
   ManServiceLapGif,
   ServiceBanner,
+  ServiceCpuBanner,
 } from "../../components/config";
 import styles from "./styles.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -127,7 +128,7 @@ const HomeModule = () => {
           <SwiperSlide>
             <div
               className={`${styles.swiperImgTop} ${styles.img2}`}
-              style={{ backgroundImage: `url(${BusinessGuyJpg})` }}
+              style={{ backgroundImage: `url(${ServiceCpuBanner})` }}
             >
               <Container className={styles.swiperContainer}>
                 <div className={`${styles.swiperTitle} ${activeIndex === 1 ? "fadeLeft" : ""}`}>

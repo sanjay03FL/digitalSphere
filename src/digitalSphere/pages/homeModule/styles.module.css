@@ -162,6 +162,8 @@
   text-transform: capitalize !important;
   color: #fff !important;
   padding: 4rem 0 !important;
+  /* background-color: #94bfe842;
+  background-blend-mode: exclusion; */
 }
 
 .sectionFiveth > .title {
@@ -218,6 +220,8 @@
   background-repeat: no-repeat !important;
   background-position: center !important;
   filter: brightness(0.9);
+  /* background-color: #94bfe842;
+  background-blend-mode: exclusion; */
 }
 .img1 > .swiperContainer {
   align-items: start;
@@ -267,6 +271,8 @@
   background-attachment: fixed !important;
   position: relative;
   height: 350px;
+  background-color: #94bfe842;
+  background-blend-mode: exclusion;
 }
 .sectionCommitment > .textContainer {
   display: flex;
