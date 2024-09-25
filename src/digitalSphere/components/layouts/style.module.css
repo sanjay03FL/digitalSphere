@@ -63,7 +63,8 @@
 }
 .sectionCol1 > h5,
 .sectionCol > h5 {
-  margin-bottom: 2rem;
+  font-family: "Poppins-SemiBold" !important;
+  margin-bottom: 1.5rem;
   font-weight: 600;
 }
 .sectionCol1 > p,
@@ -74,6 +75,32 @@
   border-top: 1px outset #caf0f8;
   text-align: center;
   padding: 1rem;
+}
+.breadcrumbBanner {
+  background-image: url("../../assets/images/png&jpg/cyberGuy4.png");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  height: 300px;
+  /* filter: brightness(0.8); */
+}
+.customContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.breadcrumbBanner > .customContainer > div > .title {
+  font-family: "Poppins-Bold" !important;
+  color: #fff;
+  font-size: 34px;
+  text-shadow: 3px 3px 4px #013160;
+}
+.breadcrumbBanner > .customContainer > div > .path{
+  font-family: "Poppins-Regular" !important;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 1023px) {
   .headerTop {

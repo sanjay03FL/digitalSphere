@@ -6,6 +6,8 @@
   --topHeader2Background: #023e8a;
   --topHeader2Filter: brightness(0) saturate(100%) invert(35%) sepia(71%) saturate(6247%) hue-rotate(341deg)
     brightness(99%) contrast(82%);
+
+  --primaryColor: #013160;
 }
 
 @font-face {
@@ -173,7 +175,7 @@ body {
   border-bottom-style: outset;
 }
 .footer {
-  background-color: #013160 !important;
+  background-color: var(--primaryColor) !important;
   color: #fff !important;
   padding: 1rem;
   bottom: 0;
@@ -235,7 +237,7 @@ body {
   width: fit-content;
   border-radius: 0 !important;
   padding: 1rem 1.5rem !important;
-  background-color: #013160 !important;
+  background-color: var(--primaryColor) !important;
   border-style: none !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase;
@@ -258,9 +260,9 @@ body {
   margin-right: 1.5rem;
 }
 .lightBtn:hover {
-  background-color: #013160 !important;
+  background-color: var(--primaryColor) !important;
   color: #fff !important;
-  border-color: #013160 !important;
+  border-color: var(--primaryColor) !important;
 }
 
 @media only screen and (max-width: 1023px) {

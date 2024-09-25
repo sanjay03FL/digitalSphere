@@ -2,7 +2,11 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { MailSvgIcon, PhoneSvgIcon, SphereSvgIcon } from "../config";
 import styles from "../layouts/style.module.css";
+import { useNavigate } from "react-router-dom";
+import navMenuArray, { staticData } from "../../utilities/staticData";
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <React.Fragment>
       <div className={`top-header ${styles.headerTop}`}>
@@ -36,11 +40,29 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className={`nav-menu collapse navbar-collapse ${styles.navMenu}`} id="navbarTogglerDemo02">
-            <span className={`nav-menu-item ${styles.navItem} ${styles.navActiveItem}`}>Home</span>
+            {staticData?.navMenuArray?.map((v, i) => (
+              <span
+                key={i}
+                className={`nav-menu-item ${styles.navItem} ${
+                  window.location.pathname === v.link ? styles.navActiveItem : styles.navInActiveItem
+                } ${i === 4 && "me-0"}`}
+                onClick={() => navigate(v.link)}
+              >
+                {v.name}
+              </span>
+            ))}
+            {/* <span className={`nav-menu-item ${styles.navItem} ${styles.navActiveItem}`} onClick={() => navigate("/")}>
+              Home
+            </span>
             <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}>About Us</span>
-            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}>Service</span>
+            <span
+              className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}
+              onClick={() => navigate("/service")}
+            >
+              Service
+            </span>
             <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}>Blog</span>
-            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem} me-0`}>Contact Us</span>
+            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem} me-0`}>Contact Us</span> */}
           </div>
         </Container>
       </nav>

@@ -19,6 +19,16 @@ import InstragramSvgIcon from "../../assets/images/svg/instagram.svg";
 import ManServiceLapGif from "../../assets/images/png&jpg/manServiceLaptop.gif";
 import ServiceBanner from "../../assets/images/png&jpg/serviceBanner.jpg";
 import ServiceCpuBanner from "../../assets/images/png&jpg/checkingCpu.webp";
+import TwoWorks from "../../assets/images/png&jpg/twoWorkers.jpg";
+import CyberGuy from "../../assets/images/png&jpg/cyberGuy.png";
+import ServiceGeneral from "../../assets/images/png&jpg/serviceGeneral.jpg";
+import HardWareSoftwareImg from "../../assets/images/png&jpg/hardwareSoftware.jpeg";
+import VirusRecovery from "../../assets/images/png&jpg/virusRecovery.jpg";
+import OnSiteImg from "../../assets/images/png&jpg/onSite.jpg";
+import PasswordResetImg from "../../assets/images/png&jpg/passwordReset.jpg";
+import InternetFirewall from "../../assets/images/png&jpg/internetFirewall.jpg";
+import SurveillanceInstallation from "../../assets/images/png&jpg/cameraInstallation.jpeg";
+import ServiceLogo from "../../assets/images/png&jpg/serviceLogo.png";
 
 export {
   PhoneSvgIcon,
@@ -41,4 +51,14 @@ export {
   ManServiceLapGif,
   ServiceBanner,
   ServiceCpuBanner,
+  TwoWorks,
+  CyberGuy,
+  ServiceGeneral,
+  HardWareSoftwareImg,
+  VirusRecovery,
+  OnSiteImg,
+  PasswordResetImg,
+  InternetFirewall,
+  SurveillanceInstallation,
+  ServiceLogo,
 };

@@ -1,0 +1,197 @@
+/* .serviceBody {
+  background-color: #f4f4f4 !important;
+} */
+
+.headerTitle {
+  font-family: "Poppins-Bold" !important;
+  color: var(--primaryColor);
+  text-align: center;
+  margin: 2rem;
+}
+.serviceRow {
+  display: flex;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.serviceRow > .serviceImg {
+  width: 200px;
+  height: 200px;
+  margin-right: 2rem;
+  object-fit: cover;
+}
+.serviceRow > div > h3 {
+  font-family: "Poppins-Bold" !important;
+  font-size: 22px !important;
+}
+.serviceRow > div > span {
+  font-size: 16px !important;
+  font-family: "Poppins-SemiBold" !important;
+  color: var(--primaryColor);
+  margin-bottom: 1rem;
+}
+.serviceRow > div > p {
+  font-size: 16px !important;
+  color: #777;
+  margin-bottom: 0.3rem;
+}
+
+.serviceRow > div > .price {
+  font-size: 16px !important;
+  /* color: #777; */
+  margin-bottom: 0.5rem !important;
+}
+.onSiteSection {
+  background-color: #212529;
+  color: #fff;
+  /* text-align: center; */
+  text-transform: capitalize !important;
+  padding: 2rem 0 !important;
+}
+.onSiteSection > .container {
+  display: flex;
+  align-items: center;
+}
+.onSiteImg {
+  width: 400px;
+  height: 350px;
+  margin-right: 3rem;
+}
+.onSiteSection > .container > div > .title {
+  text-shadow: 3px 3px 4px black;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2em;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.onSiteSection > .container > div > div {
+  font-weight: 500;
+  font-size: 16px;
+}
+.internetSection {
+  margin: 3rem 0;
+}
+.annualSection {
+  background-color: #f4f4f4;
+  padding: 3rem 0;
+}
+.annualSection > .container > h3 {
+  font-family: "Poppins-Bold" !important;
+  font-size: 24px !important;
+  text-align: center;
+}
+.annualSection > .container > .containerSection {
+  display: flex;
+  justify-content: space-evenly;
+}
+.annualSection > .container > .row {
+  display: flex;
+  flex-direction: column;
+}
+.sectionCard > span > h5 {
+  font-family: "Poppins-SemiBold" !important;
+  font-size: 18px !important;
+  margin-bottom: 0 !important;
+  color: var(--primaryColor);
+}
+.sectionCard > span > img {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(75%) saturate(1468%) hue-rotate(188deg) brightness(93%)
+    contrast(105%);
+}
+
+.sectionCommitment {
+  display: flex;
+}
+.sectionCommitment > .imgContainer {
+  background-image: url("../../assets/images/png&jpg/checkingCpu.webp");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  /* filter: brightness(0.8); */
+  background-attachment: fixed !important;
+  position: relative;
+  height: 350px;
+}
+.sectionCommitment > .textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.sectionCommitment > .textContainer > .heading {
+  font-family: "Poppins-Bold" !important;
+  margin-bottom: 1rem;
+}
+
+.sectionCommitment > .textContainer > .title {
+  font-family: "Poppins-SemiBold" !important;
+  color: var(--primaryColor);
+  margin-bottom: 1rem;
+}
+.sectionCommitment > .textContainer > .points {
+  color: #777 !important;
+}
+.sectionCommitment > .textContainer > .keyPoints {
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 14px !important;
+}
+.repairSection {
+  display: flex;
+  padding: 3rem 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.repairSection > div > img {
+  width: 200px;
+  height: 200px;
+  margin-right: 2rem;
+  display: inline-block;
+  /* animation: bounce 3s infinite; */
+  animation: smoothBounce 2s infinite;
+}
+
+.repairSection > div > div > h3 {
+  font-family: "Poppins-SemiBold" !important;
+  font-size: 50px !important;
+}
+
+.repairSection > div > div > ul > li {
+  font-family: "Poppins-Regular" !important;
+  font-size: 16px !important;
+  line-height: 2.2em;
+  margin-left: 1rem;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.smooth-bounce {
+  animation: smoothBounce 2s infinite;
+  display: inline-block;
+}
+
+@keyframes smoothBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); /* Eases into and out of the bounce */
+  }
+  50% {
+    transform: translateY(-30px); /* Move up by 30px */
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); /* Quick bounce up */
+  }
+}
