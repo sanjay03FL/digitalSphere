@@ -7,12 +7,14 @@ import { OnSiteImg, CheckSvgIcon, HardWareSoftwareImg, ManServiceLapGif, Service
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SimpleModal from "../../components/common/modal";
+import { useNavigate } from "react-router-dom";
 AOS.init({
   easing: "ease-out-back",
   duration: 3000,
   anchorPlacement: "top-bottom",
 });
 const ServiceModule = () => {
+  const navigate = useNavigate();
   const [viewInfo, setViewInfo] = useState(false);
   const handleViewInfo = (info) => {
     setViewInfo({ status: true, details: info });
@@ -20,20 +22,54 @@ const ServiceModule = () => {
   const ModalHeader = () => {
     return (
       <div>
-        <h4 className="modal-title">Service Info</h4>
+        <h4 className={`modal-title ${styles.modalCustomTitle}`}>{viewInfo?.details?.name}</h4>
       </div>
     );
   };
 
   const ModalBody = () => {
-    return <div>Modal Body</div>;
+    return (
+      viewInfo?.status && (
+        <React.Fragment>
+          <Container className={styles.modalContainer}>
+            <img src={viewInfo?.details?.img} className={styles.serviceImg} />
+            <div className="d-flex flex-column" data-aos="fade-bottom">
+              {/* <h3>{viewInfo?.details?.name}</h3> */}
+              {Array.isArray(viewInfo?.details?.details) ? (
+                viewInfo?.details?.details.map((v, i) => (
+                  <div key={i} className={styles.serviceCardDetails}>
+                    <span>{v?.title}</span>
+                    <p>{v?.desc}</p>
+                    <p className={styles.price}>Price : {v?.price}</p>
+                  </div>
+                ))
+              ) : (
+                <div className={styles.serviceCardDetails}>
+                  <span>{viewInfo?.details?.name}</span>
+                  <p>{viewInfo?.details?.details}</p>
+                  <p className={styles.price}>Price : {viewInfo?.details?.price}</p>
+                </div>
+              )}
+            </div>
+          </Container>
+          <div className={styles.modalFooter}>
+            <Button className="primaryBtn me-4" onClick={() => navigate("/contactUs")}>
+              Contact Us
+            </Button>
+            <Button className={`lightBtn`} onClick={() => setViewInfo(false)}>
+              close
+            </Button>
+          </div>
+        </React.Fragment>
+      )
+    );
   };
 
   const ModalFooter = () => {
     return (
-      <div>
-        <Button color="light me-4">Close</Button>
-      </div>
+      <Button className="primaryBtn" style={{ padding: "0.5rem 1rem" }}>
+        close
+      </Button>
     );
   };
   return (
@@ -84,7 +120,9 @@ const ServiceModule = () => {
                 <h3>{v.name}</h3>
                 <p>{v.details}</p>
                 <p className={styles.price}>Price : {v.price}</p>
-                <Button className={`lightBtn`}>View More</Button>
+                <Button className={`lightBtn`} onClick={() => handleViewInfo(v)}>
+                  View More
+                </Button>
               </div>
             </div>
           ))}
@@ -139,7 +177,9 @@ const ServiceModule = () => {
             </div>
           </div>
           <div className="text-center mt-4">
-            <Button className="primaryBtn">Contact Now</Button>
+            <Button className="primaryBtn" onClick={() => navigate("/contactUs")}>
+              Contact Now
+            </Button>
           </div>
         </Container>
       </div>
@@ -237,7 +277,9 @@ const ServiceModule = () => {
             </div>
             <div className={styles.contactBtn} data-aos="fade-down">
               <Button className="primaryBtn me-4">Call Us +1-302-390-7520</Button>
-              <Button className={`lightBtn`}>Contact Us</Button>
+              <Button className={`lightBtn`} onClick={() => navigate("/contactUs")}>
+                Contact Us
+              </Button>
             </div>
           </div>
         </Container>
@@ -247,7 +289,7 @@ const ServiceModule = () => {
         close={() => setViewInfo(false)}
         modalHeader={ModalHeader()}
         modalBody={ModalBody()}
-        modalFooter={ModalFooter()}
+        modalFooter={null}
       />
     </React.Fragment>
   );

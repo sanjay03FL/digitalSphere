@@ -6,13 +6,13 @@ const SimpleModal = (props) => {
 
   return (
     <div>
-      <Modal show={open} onHide={close} fullscreen={"xl-down"} className="table-transistion">
+      <Modal show={open} onHide={close} fullscreen={"xl-down"} size="lg" className="table-transistion">
         <ModalHeader closeButton className={modalHeader ? "modalTitleBottom" : "sampleClass"} style={{ width: "100%" }}>
           <div className="d-flex align-items-baseline">{modalHeader}</div>
         </ModalHeader>
 
-        <ModalBody>{modalBody}</ModalBody>
-        <ModalFooter>{modalFooter}</ModalFooter>
+        {modalBody && <ModalBody>{modalBody}</ModalBody>}
+        {modalFooter && <ModalFooter>{modalFooter}</ModalFooter>}
       </Modal>
     </div>
   );

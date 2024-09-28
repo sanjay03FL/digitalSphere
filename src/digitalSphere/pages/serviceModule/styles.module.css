@@ -200,6 +200,35 @@
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); /* Quick bounce up */
   }
 }
+.modalContainer {
+  display: flex;
+}
+.modalContainer > .serviceImg {
+  width: 50%;
+  /* height: 350px; */
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.modalCustomTitle {
+  font-family: "Poppins-Bold" !important;
+  font-size: 18px;
+}
+.modalFooter {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.serviceCardDetails > span {
+  font-family: "Poppins-SemiBold" !important;
+  color: var(--primaryColor);
+  margin-bottom: 1rem;
+}
+.serviceCardDetails > p {
+  color: #777 !important;
+}
+.serviceCardDetails > .price {
+  color: #000000 !important;
+}
 
 @media only screen and (max-width: 1023px) {
   .serviceRow {
@@ -267,5 +296,14 @@
   .repairSection > .contactBtn > Button {
     margin-bottom: 1rem;
     margin-left: 1rem;
+  }
+  .modalContainer {
+    flex-direction: column;
+  }
+  .modalContainer > .serviceImg {
+    width: 100%;
+    object-fit: cover;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
   }
 }

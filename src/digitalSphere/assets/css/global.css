@@ -180,7 +180,19 @@ body {
   padding: 1rem;
   bottom: 0;
 }
+.btn-close:focus {
+  box-shadow: none !important;
+}
 
+.table-transistion {
+  transition: transform 0.5s ease-out,
+   opacity 0.5s ease-out !important;
+}
+
+/* .table-transistion {
+  transform: translate(0, 0) !important;
+  opacity: 1 !important;
+} */
 /* .primaryBtn {
   background-color: #03045e !important;
   border: none !important;
