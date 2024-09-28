@@ -11,7 +11,7 @@
 .serviceRow {
   display: flex;
   margin-bottom: 3rem;
-  align-items: center;
+  /* align-items: center; */
 }
 .serviceRow > .serviceImg {
   width: 200px;
@@ -211,9 +211,7 @@
     height: 200px;
     margin-right: 0;
     margin-bottom: 1rem;
-    object-fit: cover;
   }
-
   .serviceRow > div > h3 {
     font-size: 18px !important;
   }
