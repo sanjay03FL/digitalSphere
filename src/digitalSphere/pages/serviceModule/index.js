@@ -100,7 +100,7 @@ const ServiceModule = () => {
                   {i !== 1 && (
                     <div className={`mb-4 ${styles.sectionCard}`}>
                       <span className="d-flex align-items-center mb-2">
-                        <img className="me-1" src={CheckSvgIcon} width={18} height={18} />
+                        <img className="me-1" src={CheckSvgIcon} />
                         <h5>{v.name}</h5>
                       </span>
                       <ul className="ms-2">
@@ -113,13 +113,13 @@ const ServiceModule = () => {
                 </React.Fragment>
               ))}
             </div>
-            <div className={`mt-4`}>
+            <div className={`mt-4 ${styles.row}`}>
               {staticData?.AnnualDetails.map((v, i) => (
                 <React.Fragment key={i}>
                   {i === 1 && (
                     <div className={styles.sectionCard}>
                       <span className="d-flex align-items-center mb-2">
-                        <img className="me-1" src={CheckSvgIcon} width={18} height={18} />
+                        <img className="me-1" src={CheckSvgIcon} />
                         <h5>{v.name}</h5>
                       </span>
                       <ul className="ms-2">
@@ -235,7 +235,7 @@ const ServiceModule = () => {
                 </ul>
               </div>
             </div>
-            <div data-aos="fade-down">
+            <div className={styles.contactBtn}  data-aos="fade-down">
               <Button className="primaryBtn me-4">Call Us +1-302-390-7520</Button>
               <Button className={`lightBtn`}>Contact Us</Button>
             </div>
