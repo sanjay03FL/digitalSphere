@@ -45,7 +45,7 @@ const ServiceModule = () => {
           {staticData?.servicesDetails?.map((v, i) => (
             <div className={`fadeTop ${styles.serviceRow}`} key={i}>
               <img src={v.img} className={styles.serviceImg} data-aos="fade-right" />
-              <div className="d-flex flex-column" data-aos="fade-left">
+              <div className="d-flex flex-column" data-aos="fade-bottom">
                 <h3>{v.name}</h3>
                 <span>{v.details[0].title}</span>
                 <p>{v.details[0].desc}</p>
@@ -61,7 +61,7 @@ const ServiceModule = () => {
       <div className={styles.onSiteSection}>
         <Container className={styles.container}>
           <img src={OnSiteImg} className={styles.onSiteImg} data-aos="fade-right" />
-          <div data-aos="fade-left">
+          <div data-aos="fade-bottom">
             <h5 className={styles.title}>On Site</h5>
             <h4 className="mb-4">Local Area Discount 0$ travel fee Within 5 miles</h4>
             <h4 style={{ marginBottom: "2rem" }}>DIAGNOSIS</h4>
@@ -80,7 +80,7 @@ const ServiceModule = () => {
           {staticData?.internetServiceDetails?.map((v, i) => (
             <div className={`fadeTop ${styles.serviceRow}`} key={i}>
               <img src={v.img} className={styles.serviceImg} data-aos="fade-right" />
-              <div className="d-flex flex-column" data-aos="fade-left">
+              <div className="d-flex flex-column" data-aos="fade-bottom">
                 <h3>{v.name}</h3>
                 <p>{v.details}</p>
                 <p className={styles.price}>Price : {v.price}</p>
@@ -191,7 +191,7 @@ const ServiceModule = () => {
             style={{ objectFit: "cover" }}
             data-aos="fade-right"
           />
-          <div data-aos="fade-left">
+          <div data-aos="fade-bottom">
             <h5 className={styles.title}>Network Services</h5>
             <p className="mb-4">
               We ensure that your business network is properly secured and connected. We specialize in implementing
@@ -235,7 +235,7 @@ const ServiceModule = () => {
                 </ul>
               </div>
             </div>
-            <div className={styles.contactBtn}  data-aos="fade-down">
+            <div className={styles.contactBtn} data-aos="fade-down">
               <Button className="primaryBtn me-4">Call Us +1-302-390-7520</Button>
               <Button className={`lightBtn`}>Contact Us</Button>
             </div>
