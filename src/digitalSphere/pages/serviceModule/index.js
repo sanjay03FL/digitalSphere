@@ -32,7 +32,7 @@ const ServiceModule = () => {
       viewInfo?.status && (
         <React.Fragment>
           <Container className={styles.modalContainer}>
-            <img src={viewInfo?.details?.img} className={styles.serviceImg} />
+            <img src={viewInfo?.details?.img} className={styles.serviceImg} alt="" />
             <div className="d-flex flex-column" data-aos="fade-bottom">
               {/* <h3>{viewInfo?.details?.name}</h3> */}
               {Array.isArray(viewInfo?.details?.details) ? (
@@ -54,7 +54,7 @@ const ServiceModule = () => {
           </Container>
           <div className={styles.modalFooter}>
             <Button className="primaryBtn me-4" onClick={() => navigate("/contactUs")}>
-              Contact Us
+              Contact Now
             </Button>
             <Button className={`lightBtn`} onClick={() => setViewInfo(false)}>
               close
@@ -80,23 +80,36 @@ const ServiceModule = () => {
         <Container>
           {staticData?.servicesDetails?.map((v, i) => (
             <div className={`fadeTop ${styles.serviceRow}`} key={i}>
-              <img src={v.img} className={styles.serviceImg} data-aos="fade-right" />
-              <div className="d-flex flex-column" data-aos="fade-bottom">
-                <h3>{v.name}</h3>
-                <span>{v.details[0].title}</span>
-                <p>{v.details[0].desc}</p>
-                <p className={styles.price}>Price : {v.details[0].price}</p>
-                <Button className={`lightBtn`} onClick={() => handleViewInfo(v)}>
-                  View More
-                </Button>
-              </div>
+              <img src={v.img} className={styles.serviceImg} data-aos="fade-right" alt="" />
+              {i === 0 ? (
+                <div className="d-flex flex-column" data-aos="fade-bottom">
+                  <h3>{v.name}</h3>
+                  {v?.details?.map((x, y) => (
+                    <React.Fragment key={y}>
+                      <span>{x.title}</span>
+                      <p>{x.desc}</p>
+                      <p className={styles.price}>Price : {x.price}</p>
+                    </React.Fragment>
+                  ))}
+                </div>
+              ) : (
+                <div className="d-flex flex-column" data-aos="fade-bottom">
+                  <h3>{v.name}</h3>
+                  <span>{v.details[0].title}</span>
+                  <p>{v.details[0].desc}</p>
+                  <p className={styles.price}>Price : {v.details[0].price}</p>
+                  <Button className={`lightBtn`} onClick={() => handleViewInfo(v)}>
+                    View More
+                  </Button>
+                </div>
+              )}
             </div>
           ))}
         </Container>
       </div>
       <div className={styles.onSiteSection}>
         <Container className={styles.container}>
-          <img src={OnSiteImg} className={styles.onSiteImg} data-aos="fade-right" />
+          <img src={OnSiteImg} className={styles.onSiteImg} data-aos="fade-right" alt="" />
           <div data-aos="fade-bottom">
             <h5 className={styles.title}>On Site</h5>
             <h4 className="mb-4">Local Area Discount 0$ travel fee Within 5 miles</h4>
@@ -115,7 +128,7 @@ const ServiceModule = () => {
         <Container>
           {staticData?.internetServiceDetails?.map((v, i) => (
             <div className={`fadeTop ${styles.serviceRow}`} key={i}>
-              <img src={v.img} className={styles.serviceImg} data-aos="fade-right" />
+              <img src={v.img} className={styles.serviceImg} data-aos="fade-right" alt="" />
               <div className="d-flex flex-column" data-aos="fade-bottom">
                 <h3>{v.name}</h3>
                 <p>{v.details}</p>
@@ -138,7 +151,7 @@ const ServiceModule = () => {
                   {i !== 1 && (
                     <div className={`mb-4 ${styles.sectionCard}`}>
                       <span className="d-flex align-items-center mb-2">
-                        <img className="me-1" src={CheckSvgIcon} />
+                        <img className="me-1" src={CheckSvgIcon} alt="" />
                         <h5>{v.name}</h5>
                       </span>
                       <ul className="ms-2">
@@ -157,7 +170,7 @@ const ServiceModule = () => {
                   {i === 1 && (
                     <div className={styles.sectionCard}>
                       <span className="d-flex align-items-center mb-2">
-                        <img className="me-1" src={CheckSvgIcon} />
+                        <img className="me-1" src={CheckSvgIcon} alt="" />
                         <h5>{v.name}</h5>
                       </span>
                       <ul className="ms-2">
@@ -230,6 +243,7 @@ const ServiceModule = () => {
             className={styles.onSiteImg}
             style={{ objectFit: "cover" }}
             data-aos="fade-right"
+            alt=""
           />
           <div data-aos="fade-bottom">
             <h5 className={styles.title}>Network Services</h5>
@@ -262,7 +276,7 @@ const ServiceModule = () => {
         <Container>
           <div className={styles.repairSection}>
             <div className="d-flex align-items-center">
-              <img src={ServiceLogo} />
+              <img src={ServiceLogo} alt="" />
               <div>
                 <h3>Repair Price</h3>
                 <ul>

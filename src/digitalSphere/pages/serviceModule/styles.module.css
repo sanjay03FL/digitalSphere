@@ -14,8 +14,8 @@
   /* align-items: center; */
 }
 .serviceRow > .serviceImg {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  /* height: 200px; */
   margin-right: 2rem;
   object-fit: cover;
 }
@@ -217,6 +217,7 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
+  margin: 1rem 0;
 }
 .serviceCardDetails > span {
   font-family: "Poppins-SemiBold" !important;
