@@ -1,10 +1,13 @@
 import {
+  AbrarTeam,
+  AlexTeam,
   CpuServicePng,
   DataRecoveryServicePng,
   HardWareSoftwareImg,
   InternetFirewall,
   MotherBoardDark,
   PasswordResetImg,
+  PhilipTeam,
   ServiceGeneral,
   SurveillanceInstallation,
   VirusRecovery,
@@ -197,10 +200,37 @@ const AnnualDetails = [
   },
 ];
 
+const teamDetails = [
+  {
+    id: 1,
+    name: "Abrar",
+    role: "CEO & Founder",
+    img: AbrarTeam,
+    details:
+      "Abrar is a young, tech-savvy visionary with over 15 years of industry experience, he is always ahead of the curve, quick on his feet, and dedicated to pushing boundaries. Whether flying drones or piloting planes in his free time, he brings the same drive and passion to his work—leading DigitalSphere into the future with relentless energy.",
+  },
+  {
+    id: 2,
+    name: "Philip",
+    role: "CEO & Founder",
+    img: PhilipTeam,
+    details:
+      "Philip is a stable force, offers a wealth of wisdom and experience that resonates with our mature clientele. With a calm, measured approach, he’s the rock of our team, helping ensure steady growth. When he’s not steering the ship at DigitalSphere, you can find him sailing the seas or enjoying a cold beer by the shore.",
+  },
+  {
+    id: 3,
+    name: "Alex",
+    role: "IT specialist",
+    img: AlexTeam,
+    details:
+      "Rounding out the team, Alex is our energetic problem-solver with 5 years of experience, who adds fresh perspectives and fun to the workplace. With boundless energy and a talent for tackling challenges, he keeps the team on its toes, ensuring that we’re always moving forward.",
+  },
+];
 
 export const staticData = {
   navMenuArray,
   servicesDetails,
   internetServiceDetails,
   AnnualDetails,
+  teamDetails,
 };

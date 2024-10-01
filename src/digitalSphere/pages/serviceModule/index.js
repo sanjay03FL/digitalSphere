@@ -77,43 +77,39 @@ const ServiceModule = () => {
       <CustomBreadcrumb />
       <div className={styles.serviceBody}>
         <h1 className={styles.headerTitle}>In Store</h1>
-        <Container>
+        <Container className={styles.serviceContainer}>
           {staticData?.servicesDetails?.map((v, i) => (
-            <div className={`fadeTop ${styles.serviceRow}`} key={i}>
-              <img src={v.img} className={styles.serviceImg} data-aos="fade-right" alt="" />
-              {i === 0 ? (
-                <div className="d-flex flex-column" data-aos="fade-bottom">
+            <div className={`${styles.serviceRow}`} key={i}>
+              <img src={v.img} className={styles.serviceImg} alt="" data-aos="fade-down" />
+              <div className={styles.serviceDetails} data-aos="fade-up">
+                <div className="d-flex flex-column justify-content-evenly">
                   <h3>{v.name}</h3>
-                  {v?.details?.map((x, y) => (
-                    <React.Fragment key={y}>
-                      <span>{x.title}</span>
-                      <p>{x.desc}</p>
-                      <p className={styles.price}>Price : {x.price}</p>
-                    </React.Fragment>
-                  ))}
+                  <span>
+                    <ul>
+                      {v.details.map((v, x) => {
+                        if (x < 3) {
+                          return <li key={x}>{v.title}</li>;
+                        }
+                        return null;
+                      })}
+                    </ul>
+                  </span>
                 </div>
-              ) : (
-                <div className="d-flex flex-column" data-aos="fade-bottom">
-                  <h3>{v.name}</h3>
-                  <span>{v.details[0].title}</span>
-                  <p>{v.details[0].desc}</p>
-                  <p className={styles.price}>Price : {v.details[0].price}</p>
-                  <Button className={`lightBtn`} onClick={() => handleViewInfo(v)}>
-                    View More
-                  </Button>
-                </div>
-              )}
+                <Button className={`primaryBtn`} onClick={() => handleViewInfo(v)}>
+                  View Price
+                </Button>
+              </div>
             </div>
           ))}
         </Container>
       </div>
       <div className={styles.onSiteSection}>
         <Container className={styles.container}>
-          <img src={OnSiteImg} className={styles.onSiteImg} data-aos="fade-right" alt="" />
-          <div data-aos="fade-bottom">
+          <img src={OnSiteImg} className={styles.onSiteImg} data-aos="fade-down" alt="" />
+          <div data-aos="fade-up">
             <h5 className={styles.title}>On Site</h5>
-            <h4 className="mb-4">Local Area Discount 0$ travel fee Within 5 miles</h4>
-            <h4 style={{ marginBottom: "2rem" }}>DIAGNOSIS</h4>
+            <h5 className="mb-4">Local Area Discount 0$ travel fee Within 5 miles</h5>
+            <h5 style={{ marginBottom: "2rem" }}>DIAGNOSIS</h5>
             <div style={{ marginBottom: "1rem" }}>
               Priority Level Normal:One way - <span>100$/ hr + travel — Starting @ 50$</span>
             </div>
@@ -125,16 +121,18 @@ const ServiceModule = () => {
         </Container>
       </div>
       <div className={styles.internetSection}>
-        <Container>
+        <Container className={styles.serviceContainer}>
           {staticData?.internetServiceDetails?.map((v, i) => (
-            <div className={`fadeTop ${styles.serviceRow}`} key={i}>
-              <img src={v.img} className={styles.serviceImg} data-aos="fade-right" alt="" />
-              <div className="d-flex flex-column" data-aos="fade-bottom">
-                <h3>{v.name}</h3>
-                <p>{v.details}</p>
-                <p className={styles.price}>Price : {v.price}</p>
-                <Button className={`lightBtn`} onClick={() => handleViewInfo(v)}>
-                  View More
+            <div className={`${styles.serviceRow}`} key={i}>
+              <img src={v.img} className={styles.serviceImg} data-aos="fade-down" alt="" />
+              <div className={styles.serviceDetails} data-aos="fade-up">
+                <div className="d-flex flex-column">
+                  <h3>{v.name}</h3>
+                  <p>{v.details}</p>
+                  {/* <p className={styles.price}>Price : {v.price}</p> */}
+                </div>
+                <Button className={`primaryBtn`} onClick={() => handleViewInfo(v)}>
+                  View Price
                 </Button>
               </div>
             </div>
@@ -242,18 +240,18 @@ const ServiceModule = () => {
             src={ManServiceLapGif}
             className={styles.onSiteImg}
             style={{ objectFit: "cover" }}
-            data-aos="fade-right"
+            data-aos="fade-down"
             alt=""
           />
-          <div data-aos="fade-bottom">
+          <div data-aos="fade-up">
             <h5 className={styles.title}>Network Services</h5>
-            <p className="mb-4">
+            <p className="mb-4" style={{ fontSize: 14, letterSpacing: "0.03rem" }}>
               We ensure that your business network is properly secured and connected. We specialize in implementing
               robust firewall solutions to safeguard your network infrastructure.
             </p>
             <h4 className="mb-4">We can install and manage any network device:</h4>
             <div style={{ marginBottom: "1rem" }}>
-              <ul>
+              <ul className="d-flex" style={{ flexWrap: "wrap" }}>
                 {[
                   "Modem/Router",
                   "Firewall",
@@ -265,13 +263,16 @@ const ServiceModule = () => {
                   "Printers",
                   "CCTV",
                 ].map((v, i) => (
-                  <li key={i}>{v}</li>
+                  <li key={i} style={{ flex: "0 0 50%" }}>
+                    {v}
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
         </Container>
       </div>
+
       <React.Fragment>
         <Container>
           <div className={styles.repairSection}>

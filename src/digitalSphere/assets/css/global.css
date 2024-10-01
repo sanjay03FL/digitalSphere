@@ -27,6 +27,7 @@
   src: url("../fonts/Poppins-ExtraBold.ttf");
 }
 body {
+  /* font-family: "Poppins-SemiBold" !important; */
   font-family: "Poppins-Regular" !important;
 }
 .row {
@@ -185,8 +186,7 @@ body {
 }
 
 .table-transistion {
-  transition: transform 0.5s ease-out,
-   opacity 0.5s ease-out !important;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out !important;
 }
 
 /* .table-transistion {

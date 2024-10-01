@@ -30,6 +30,10 @@ import InternetFirewall from "../../assets/images/png&jpg/internetFirewall.jpg";
 import SurveillanceInstallation from "../../assets/images/png&jpg/cameraInstallation.jpeg";
 import ServiceLogo from "../../assets/images/png&jpg/serviceLogo.png";
 
+import AbrarTeam from "../../assets/images/png&jpg/Abrar.png";
+import AlexTeam from "../../assets/images/png&jpg/Alex.png";
+import PhilipTeam from "../../assets/images/png&jpg/Philip.png";
+
 export {
   PhoneSvgIcon,
   MailSvgIcon,
@@ -61,4 +65,7 @@ export {
   InternetFirewall,
   SurveillanceInstallation,
   ServiceLogo,
+  AbrarTeam,
+  AlexTeam,
+  PhilipTeam,
 };

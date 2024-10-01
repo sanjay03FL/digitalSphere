@@ -8,37 +8,74 @@
   text-align: center;
   margin: 2rem;
 }
+.serviceContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .serviceRow {
   display: flex;
   margin-bottom: 3rem;
   /* align-items: center; */
+  flex-direction: column;
+  flex: 0 0 30%;
 }
 .serviceRow > .serviceImg {
-  width: 300px;
-  /* height: 200px; */
+  /* width: 250px; */
+  width: 100%;
+  height: 200px;
   margin-right: 2rem;
   object-fit: cover;
 }
-.serviceRow > div > h3 {
-  font-family: "Poppins-Bold" !important;
-  font-size: 22px !important;
+.serviceRow > .serviceDetails {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.serviceRow > div > span {
+.serviceRow > .serviceDetails > div > h3 {
+  font-family: "Poppins-Bold" !important;
+  font-size: 18px !important;
+  margin: 1rem 0;
+  height: 30px;
+  max-height: 70px;
+}
+.serviceRow > .serviceDetails > div > span {
   font-size: 16px !important;
   font-family: "Poppins-SemiBold" !important;
   color: var(--primaryColor);
   margin-bottom: 1rem;
+  line-height: 1.8rem;
+  height: 150px;
+  max-height: 200px;
 }
-.serviceRow > div > p {
+.serviceRow > .serviceDetails > div > p {
   font-size: 16px !important;
   color: #777;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /* height: 150px;
+  max-height: 200px; */
+  letter-spacing: 0.03rem;
 }
 
 .serviceRow > div > .price {
   font-size: 16px !important;
   /* color: #777; */
   margin-bottom: 0.5rem !important;
+}
+.serviceRow > div > button {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.internetSection > .serviceContainer > .serviceRow > div > button {
+  position: relative;
 }
 .onSiteSection {
   background-color: #212529;
@@ -53,7 +90,7 @@
 }
 .onSiteImg {
   width: 400px;
-  height: 350px;
+  /* height: 350px; */
   margin-right: 3rem;
 }
 .onSiteSection > .container > div > .title {
@@ -66,7 +103,9 @@
 }
 .onSiteSection > .container > div > div {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
+  letter-spacing: 0.03rem;
+  line-height: 1.5rem;
 }
 .internetSection {
   margin: 3rem 0;
@@ -112,7 +151,7 @@
   /* filter: brightness(0.8); */
   background-attachment: fixed !important;
   position: relative;
-  height: 350px;
+  /* height: 350px; */
 }
 .sectionCommitment > .textContainer {
   display: flex;
@@ -132,11 +171,13 @@
 }
 .sectionCommitment > .textContainer > .points {
   color: #777 !important;
+  letter-spacing: 0.03rem;
 }
 .sectionCommitment > .textContainer > .keyPoints {
   color: var(--primaryColor);
   font-weight: 600;
   font-size: 14px !important;
+  letter-spacing: 0.03rem;
 }
 .repairSection {
   display: flex;
@@ -222,16 +263,24 @@
 .serviceCardDetails > span {
   font-family: "Poppins-SemiBold" !important;
   color: var(--primaryColor);
-  margin-bottom: 1rem;
+  /* padding-bottom: 2rem; */
 }
 .serviceCardDetails > p {
+  margin-top: 0.3rem;
   color: #777 !important;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  letter-spacing: 0.03rem;
 }
 .serviceCardDetails > .price {
   color: #000000 !important;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 1023px) {
+  .serviceContainer {
+    flex-direction: column;
+  }
   .serviceRow {
     flex-direction: column;
     margin-bottom: 1rem;
@@ -241,6 +290,10 @@
     height: 200px;
     margin-right: 0;
     margin-bottom: 1rem;
+  }
+  .serviceRow > .serviceDetails {
+    flex-direction: column;
+    align-items: flex-start;
   }
   .serviceRow > div > h3 {
     font-size: 18px !important;
@@ -268,7 +321,7 @@
   }
   .onSiteImg {
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     margin-right: 0;
   }
   .onSiteSection > .container > div > .title {

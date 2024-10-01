@@ -1,0 +1,87 @@
+.aboutCompanyContainer {
+  display: flex;
+  margin-top: 2rem;
+}
+.companyImg {
+  width: 400px;
+  margin-right: 2rem;
+}
+.aboutCompanyContainer > div > p {
+  color: #777 !important;
+  font-size: 16px;
+  font-family: "Poppins-Regular" !important;
+  letter-spacing: 0.03rem;
+  text-align: justify;
+}
+.aboutTeamContainer {
+  margin-top: 2rem;
+}
+.aboutTeamContainer > h5 {
+  font-family: "Poppins-Bold" !important;
+  text-align: center;
+}
+.aboutTeamContainer > h2 {
+  text-align: center;
+  font-family: "Poppins-ExtraBold" !important;
+  margin-bottom: 2rem;
+}
+.aboutTeamContainer > p {
+    text-align: center;
+    font-family: "Poppins-Bold" !important;
+    margin: 3rem 0;
+  }
+.aboutTeamDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutTeamCard {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+}
+.teamImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: #777;
+}
+.aboutTeamCard > h3 {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Poppins-Bold" !important;
+}
+
+.aboutTeamCard > h5 {
+  text-align: center;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #777;
+}
+
+.aboutTeamCard > p {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: #777;
+  font-family: "Poppins-Regular" !important;
+  letter-spacing: 0.03rem;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1023px) {
+  .aboutCompanyContainer {
+    margin-top: 0.5rem;
+    flex-direction: column;
+  }
+  .companyImg {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .aboutTeamDetails {
+    flex-direction: column;
+  }
+  .teamImg {
+    height: 300px;
+  }
+}

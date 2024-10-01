@@ -10,6 +10,7 @@
 .contactSection > .contactContainer > .contactFirstHalf {
   flex-basis: 50%;
   border-right: 1px solid #969696;
+  padding-right: 0.5rem;
 }
 .contactSection > .contactContainer > div > h5 {
   color: #fff !important;
@@ -23,7 +24,7 @@
 .contactSection > .contactContainer > div > p {
   padding: 1rem 0;
   color: #969696 !important;
-  font-family: "Poppins-SemiBold" !important;
+  font-family: "Poppins-Regular" !important;
 }
 .contactSection > .contactContainer > .contactSecondHalf {
   margin-left: 3rem;
