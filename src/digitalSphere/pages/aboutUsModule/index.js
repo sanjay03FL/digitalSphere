@@ -8,25 +8,25 @@ const AboutUsModule = () => {
   return (
     <React.Fragment>
       <CustomBreadcrumb />
-      <Container className={styles.aboutCompanyContainer}>
-        <img src={BusinessGuyJpg} alt="" className={styles.companyImg} />
-        <div>
-          <p>
-            Welcome to DigitalSphere, your premier destination for top-notch computer repair services in Florida. With a
-            team of skilled technicians and cutting-edge technology, we are dedicated to providing efficient solutions
-            for all your computer-related issues
-          </p>
-          <p>
-            At DigitalSphere, customer satisfaction is our top priority. Whether it's a hardware malfunction or software
-            glitch, you can trust us to deliver reliable and affordable repair services tailored to meet your needs.
-          </p>
-          <p>Contact us today and let us take care of all your Tech needs!</p>
+      <Container className="fadeTop">
+        <div className={styles.aboutCompanyContainer}>
+          <img src={BusinessGuyJpg} alt="" className={styles.companyImg} />
+          <div>
+            <p>
+              Welcome to DigitalSphere, your premier destination for top-notch computer repair services in Florida. With
+              a team of skilled technicians and cutting-edge technology, we are dedicated to providing efficient
+              solutions for all your computer-related issues
+            </p>
+            <p>
+              At DigitalSphere, customer satisfaction is our top priority. Whether it's a hardware malfunction or
+              software glitch, you can trust us to deliver reliable and affordable repair services tailored to meet your
+              needs.
+            </p>
+            <p>Contact us today and let us take care of all your Tech needs!</p>
+          </div>
         </div>
-      </Container>
-      <div>
-        <Container className={styles.aboutTeamContainer}>
-          <h5>MEET OUR TEAM</h5>
-          <h2>Real Professionals</h2>
+        <div className={styles.aboutTeamContainer}>
+          <h3>MEET OUR TEAM</h3>
           <div className={styles.aboutTeamDetails}>
             {staticData?.teamDetails?.map((v, i) => (
               <div className={`${styles.aboutTeamCard}`} key={i}>
@@ -42,8 +42,8 @@ const AboutUsModule = () => {
             reliability, and a shared passion for technology. At DigitalSphere, we’re not just a company—we’re your
             partner in navigating the digital world.
           </p>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </React.Fragment>
   );
 };

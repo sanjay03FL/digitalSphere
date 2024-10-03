@@ -26,12 +26,16 @@ import styles from "./styles.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { staticData } from "../../utilities/staticData";
+import { useNavigate } from "react-router-dom";
 AOS.init({
   easing: "ease-out-back",
   duration: 3000,
   anchorPlacement: "top-bottom",
 });
 const HomeModule = () => {
+  const navigate = useNavigate();
+
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleSlideChange = (swiper) => {
@@ -44,6 +48,17 @@ const HomeModule = () => {
     } else {
       return val;
     }
+  };
+
+  // Get today's date
+  const getPastWeekDate = (type, count) => {
+    const today = new Date();
+    const lastWeekDate = new Date(today);
+    lastWeekDate.setDate(today.getDate() - (7 - count));
+    const day = `0${lastWeekDate.getDate()}`.slice(-2); // Ensures two digits
+    const month = lastWeekDate.toLocaleString("en-US", { month: "short" }).toUpperCase();
+    const formattedLastWeek = `${day} ${month}`;
+    return type === "DATE" ? day : month;
   };
 
   const blogArray = [
@@ -435,16 +450,17 @@ const HomeModule = () => {
               Latest Blogs
             </h5>
             <Row>
-              {blogArray?.map((v, i) => (
+              {staticData?.blogArray?.map((v, i) => (
                 <Col md={4} sm={12} className={styles.blogContainer} data-aos="fade-up">
                   <p className={styles.date}>
-                    <p>{v.date}</p>
-                    <span>{v.month}</span>
+                    <p>{getPastWeekDate("DATE", staticData?.blogArray.length - i)}</p>
+                    <span>{getPastWeekDate("MONTH", staticData?.blogArray.length - i)}</span>
                   </p>
-                  <p className={styles.blogUser}>{v.user}</p>
-                  <h4 className={styles.blogTitle}>{v.title}</h4>
-                  <p className={styles.blogPoints}>{v.points}</p>
-                  <p className={styles.viewMore}>View More</p>
+                  <h4 className={styles.blogTitle}>{v.name}</h4>
+                  <p className={styles.blogPoints}>{v.description}</p>
+                  <p className={styles.viewMore} onClick={() => navigate("/blog")}>
+                    View More
+                  </p>
                 </Col>
               ))}
             </Row>

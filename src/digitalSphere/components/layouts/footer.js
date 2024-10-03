@@ -10,7 +10,10 @@ import {
   SphereSvgIcon,
   TwitterSvgIcon,
 } from "../config";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="footer mt-4">
       <Container>
@@ -19,16 +22,17 @@ const Footer = () => {
             {/* <img className="top-footer-sphere" src={SphereSvgIcon} width={30} height={30} alt="" /> */}
             <h5>Our Story</h5>
             <p>
-              At TheDigitalSpehere, we’re dedicated to providing you with exceptional tech repair and support services...
+              At TheDigitalSpehere, we’re dedicated to providing you with exceptional tech repair and support
+              services...
             </p>
           </div>
           <div className={styles.sectionCol}>
             <h5>Our Company</h5>
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Service</p>
-            <p>Blog</p>
-            <p>Contact</p>
+            <p onClick={() => navigate("/")}>Home</p>
+            <p onClick={() => navigate("/aboutUs")}>About Us</p>
+            <p onClick={() => navigate("/service")}> Service</p>
+            <p onClick={() => navigate("/blog")}>Blog</p>
+            <p onClick={() => navigate("/contactUs")}>Contact</p>
           </div>
           <div className={styles.sectionCol}>
             <h5>Resources</h5>

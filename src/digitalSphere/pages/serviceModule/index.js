@@ -72,6 +72,7 @@ const ServiceModule = () => {
       </Button>
     );
   };
+
   return (
     <React.Fragment>
       <CustomBreadcrumb />
@@ -80,8 +81,20 @@ const ServiceModule = () => {
         <Container className={styles.serviceContainer}>
           {staticData?.servicesDetails?.map((v, i) => (
             <div className={`${styles.serviceRow}`} key={i}>
-              <img src={v.img} className={styles.serviceImg} alt="" data-aos="fade-down" />
-              <div className={styles.serviceDetails} data-aos="fade-up">
+              <img
+                src={v.img}
+                className={styles.serviceImg}
+                alt=""
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+              />
+              <div
+                className={styles.serviceDetails}
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+              >
                 <div className="d-flex flex-column justify-content-evenly">
                   <h3>{v.name}</h3>
                   <span>
@@ -124,8 +137,20 @@ const ServiceModule = () => {
         <Container className={styles.serviceContainer}>
           {staticData?.internetServiceDetails?.map((v, i) => (
             <div className={`${styles.serviceRow}`} key={i}>
-              <img src={v.img} className={styles.serviceImg} data-aos="fade-down" alt="" />
-              <div className={styles.serviceDetails} data-aos="fade-up">
+              <img
+                src={v.img}
+                className={styles.serviceImg}
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+                alt=""
+              />
+              <div
+                className={styles.serviceDetails}
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
+              >
                 <div className="d-flex flex-column">
                   <h3>{v.name}</h3>
                   <p>{v.details}</p>

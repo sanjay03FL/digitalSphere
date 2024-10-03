@@ -33,6 +33,8 @@ import ServiceLogo from "../../assets/images/png&jpg/serviceLogo.png";
 import AbrarTeam from "../../assets/images/png&jpg/Abrar.png";
 import AlexTeam from "../../assets/images/png&jpg/Alex.png";
 import PhilipTeam from "../../assets/images/png&jpg/Philip.png";
+import LaptopUsingImg from "../../assets/images/png&jpg/laptopUsing.jpg";
+import BackSVGIcon from "../../assets/images/svg/backIcon.svg";
 
 export {
   PhoneSvgIcon,
@@ -68,4 +70,6 @@ export {
   AbrarTeam,
   AlexTeam,
   PhilipTeam,
+  LaptopUsingImg,
+  BackSVGIcon,
 };

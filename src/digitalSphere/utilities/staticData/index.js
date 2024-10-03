@@ -5,6 +5,7 @@ import {
   DataRecoveryServicePng,
   HardWareSoftwareImg,
   InternetFirewall,
+  LaptopUsingImg,
   MotherBoardDark,
   PasswordResetImg,
   PhilipTeam,
@@ -227,10 +228,38 @@ const teamDetails = [
   },
 ];
 
+const blogArray = [
+  {
+    id: 1,
+    name: "Stay Safe Online",
+    title: "The Dangers of Downloading from Unknown Sources",
+    description:
+      "These digital dangers can compromise your personal information, financial security, and even the health of your computer. People aged 50 and above are often targeted because cybercriminals assume they may not be as familiar with the latest technology trends and security measures. ",
+    img: HardWareSoftwareImg,
+  },
+  {
+    id: 2,
+    name: "Speed Up Your Slow Computer",
+    title: "Essential Tips for Optimal Performance",
+    description:
+      "Whether you use your computer for work, gaming, or everyday tasks, a sluggish system can be frustrating. Over time, even the most powerful computers can slow down if they aren't properly maintained. Fortunately, you can take steps to keep your computer running smoothly. ",
+    img: LaptopUsingImg,
+  },
+  {
+    id: 3,
+    name: "Malvertising",
+    title: "The Hidden Threat of Online Ads",
+    description:
+      "In today's digital age, where online advertising is an integral part of marketing strategies, a growing concern has emerged: malvertising. This deceptive practice exploits the trust users place in advertisements, leading to potential security threats and data breaches.",
+    img: VirusRecovery,
+  },
+];
+
 export const staticData = {
   navMenuArray,
   servicesDetails,
   internetServiceDetails,
   AnnualDetails,
   teamDetails,
+  blogArray,
 };

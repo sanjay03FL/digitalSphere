@@ -9,7 +9,7 @@ const ContactUsModule = () => {
   return (
     <React.Fragment>
       <CustomBreadcrumb />
-      <div className={styles.contactSection}>
+      <div className={`fadeTop ${styles.contactSection}`}>
         <Container className={styles.contactContainer}>
           <div className={`d-flex flex-column ${styles.contactFirstHalf}`}>
             <h5>TALK TO A SPECIALIST</h5>

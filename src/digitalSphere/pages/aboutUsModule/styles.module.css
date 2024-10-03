@@ -16,20 +16,17 @@
 .aboutTeamContainer {
   margin-top: 2rem;
 }
-.aboutTeamContainer > h5 {
+
+.aboutTeamContainer > h3 {
+  text-align: center;
   font-family: "Poppins-Bold" !important;
-  text-align: center;
-}
-.aboutTeamContainer > h2 {
-  text-align: center;
-  font-family: "Poppins-ExtraBold" !important;
   margin-bottom: 2rem;
 }
 .aboutTeamContainer > p {
-    text-align: center;
-    font-family: "Poppins-Bold" !important;
-    margin: 3rem 0;
-  }
+  text-align: center;
+  font-family: "Poppins-Bold" !important;
+  margin: 3rem 0;
+}
 .aboutTeamDetails {
   display: flex;
   justify-content: space-between;
