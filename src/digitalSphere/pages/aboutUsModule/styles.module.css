@@ -4,7 +4,9 @@
 }
 .companyImg {
   width: 400px;
+  height: 300px;
   margin-right: 2rem;
+  object-fit: cover;
 }
 .aboutCompanyContainer > div > p {
   color: #777 !important;
@@ -15,6 +17,9 @@
 }
 .aboutTeamContainer {
   margin-top: 2rem;
+  background-color: #212529;
+  color: #fff;
+  padding: 2rem;
 }
 
 .aboutTeamContainer > h3 {
@@ -63,6 +68,13 @@
   font-family: "Poppins-Regular" !important;
   letter-spacing: 0.03rem;
   text-align: justify;
+}
+.lastContentContainer > p {
+  margin: 2rem 0;
+  text-align: center;
+  font-family: "Poppins-SemiBold" !important;
+    color: #212529;
+
 }
 
 @media only screen and (max-width: 1023px) {

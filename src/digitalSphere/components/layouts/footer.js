@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import styles from "../layouts/style.module.css";
 import {
   FacebookSVGIcon,
@@ -7,7 +7,6 @@ import {
   LinkedinSVGIcon,
   LocationSvgIcon,
   MailSvgIcon,
-  SphereSvgIcon,
   TwitterSvgIcon,
 } from "../config";
 import { useNavigate } from "react-router-dom";
@@ -44,19 +43,19 @@ const Footer = () => {
           <div className={styles.sectionCol}>
             <h5>Contact Us</h5>
             <p className="d-flex align-items-center">
-              <img src={LocationSvgIcon} width={15} height={15} className="footerIconSvg me-1" />
-              &nbsp;1033 station ST, Lakeland FL 33813
+              <img src={LocationSvgIcon} width={15} height={15} className="footerIconSvg me-1" alt="" />
+              &nbsp;Lakeland, FL, US
             </p>
             <p className="d-flex align-items-center">
-              <img src={MailSvgIcon} width={15} height={15} className="footerIconSvg me-1" />
+              <img src={MailSvgIcon} width={15} height={15} className="footerIconSvg me-1" alt="" />
               &nbsp;info@thedigitalsphere.us
             </p>
             <h5>Follow Us</h5>
             <p className="d-flex">
-              <img src={FacebookSVGIcon} width={20} height={20} className="footerIconSvg me-4" />
-              <img src={TwitterSvgIcon} width={20} height={20} className="footerIconSvg me-4" />
-              <img src={LinkedinSVGIcon} width={20} height={20} className="footerIconSvg me-4" />
-              <img src={InstragramSvgIcon} width={20} height={20} className="footerIconSvg me-1" />{" "}
+              <img src={FacebookSVGIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
+              <img src={TwitterSvgIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
+              <img src={LinkedinSVGIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
+              <img src={InstragramSvgIcon} width={20} height={20} className="footerIconSvg me-1" alt="" />{" "}
             </p>
           </div>
         </div>

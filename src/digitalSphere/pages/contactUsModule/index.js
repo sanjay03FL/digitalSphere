@@ -4,8 +4,10 @@ import { Button, Container, Form } from "react-bootstrap";
 import styles from "../contactUsModule/styles.module.css";
 import { LocationSvgIcon, MailSvgIcon, PhoneSvgIcon } from "../../components/config";
 import MapComponent from "../../components/common/googleMap";
+import { useNavigate } from "react-router-dom";
 
 const ContactUsModule = () => {
+  const navigate = useNavigate();
   return (
     <React.Fragment>
       <CustomBreadcrumb />
@@ -18,7 +20,9 @@ const ContactUsModule = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismodac, finibus
               vitae dui rem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <Button className={`lightBtn`}>About Us</Button>
+            <Button className={`lightBtn`} onClick={() => navigate("/aboutUs")}>
+              About Us
+            </Button>
           </div>
           <div className={`d-flex flex-column ${styles.contactSecondHalf}`}>
             <span className="d-flex align-items-center">
@@ -31,7 +35,7 @@ const ContactUsModule = () => {
             </span>
             <span className="d-flex align-items-center">
               <img className={`${styles.locationImg} me-3`} src={LocationSvgIcon} width={25} height={25} alt="" />
-              <span>1033 station ST, Lakeland FL 33813</span>
+              <span>Lakeland, FL, US</span>
             </span>
           </div>
         </Container>

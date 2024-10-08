@@ -1,7 +1,7 @@
 import React from "react";
 import CustomBreadcrumb from "../../components/layouts/breadcrumb";
 import { Container } from "react-bootstrap";
-import { BusinessGuyJpg } from "../../components/config";
+import { BusinessGuyJpg, CyberGuy, ManServiceLapGif } from "../../components/config";
 import styles from "../aboutUsModule/styles.module.css";
 import { staticData } from "../../utilities/staticData";
 const AboutUsModule = () => {
@@ -10,7 +10,7 @@ const AboutUsModule = () => {
       <CustomBreadcrumb />
       <Container className="fadeTop">
         <div className={styles.aboutCompanyContainer}>
-          <img src={BusinessGuyJpg} alt="" className={styles.companyImg} />
+          <img src={ManServiceLapGif} alt="" className={styles.companyImg} />
           <div>
             <p>
               Welcome to DigitalSphere, your premier destination for top-notch computer repair services in Florida. With
@@ -25,24 +25,26 @@ const AboutUsModule = () => {
             <p>Contact us today and let us take care of all your Tech needs!</p>
           </div>
         </div>
-        <div className={styles.aboutTeamContainer}>
-          <h3>MEET OUR TEAM</h3>
-          <div className={styles.aboutTeamDetails}>
-            {staticData?.teamDetails?.map((v, i) => (
-              <div className={`${styles.aboutTeamCard}`} key={i}>
-                <img src={v.img} className={styles.teamImg} alt="" />
-                <h3>{v.name}</h3>
-                <h5>{v.role}</h5>
-                <p>{v.details}</p>
-              </div>
-            ))}
-          </div>
-          <p>
-            Together, we’re committed to delivering top-tier IT services while fostering relationships built on trust,
-            reliability, and a shared passion for technology. At DigitalSphere, we’re not just a company—we’re your
-            partner in navigating the digital world.
-          </p>
+      </Container>
+      <div className={styles.aboutTeamContainer}>
+        <h3>MEET OUR TEAM</h3>
+        <div className={styles.aboutTeamDetails}>
+          {staticData?.teamDetails?.map((v, i) => (
+            <div className={`${styles.aboutTeamCard}`} key={i}>
+              <img src={v.img} className={styles.teamImg} alt="" />
+              <h3>{v.name}</h3>
+              <h5>{v.role}</h5>
+              <p>{v.details}</p>
+            </div>
+          ))}
         </div>
+      </div>
+      <Container className={styles.lastContentContainer}>
+        <p>
+          Together, we’re committed to delivering top-tier IT services while fostering relationships built on trust,
+          reliability, and a shared passion for technology. At DigitalSphere, we’re not just a company—we’re your
+          partner in navigating the digital world.
+        </p>
       </Container>
     </React.Fragment>
   );

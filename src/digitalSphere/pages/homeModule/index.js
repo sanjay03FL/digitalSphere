@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 // Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Parallax, Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules";
+import { Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -15,12 +15,10 @@ import {
   MotherBoardServicePng,
   DataRecoveryServicePng,
   ScreenRepairServicePng,
-  BusinessGuyJpg,
-  PlanningGuysJpg,
-  CheckSvgIcon,
-  ManServiceLapGif,
   ServiceBanner,
   ServiceCpuBanner,
+  VirusRecovery,
+  HardWareSoftwareImg,
 } from "../../components/config";
 import styles from "./styles.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -42,14 +40,6 @@ const HomeModule = () => {
     setActiveIndex(swiper.activeIndex); // Update active index state
   };
 
-  const handleString = (val, length) => {
-    if (val.length > length) {
-      return val.substring(0, length) + "...";
-    } else {
-      return val;
-    }
-  };
-
   // Get today's date
   const getPastWeekDate = (type, count) => {
     const today = new Date();
@@ -57,39 +47,9 @@ const HomeModule = () => {
     lastWeekDate.setDate(today.getDate() - (7 - count));
     const day = `0${lastWeekDate.getDate()}`.slice(-2); // Ensures two digits
     const month = lastWeekDate.toLocaleString("en-US", { month: "short" }).toUpperCase();
-    const formattedLastWeek = `${day} ${month}`;
+    // const formattedLastWeek = `${day} ${month}`;
     return type === "DATE" ? day : month;
   };
-
-  const blogArray = [
-    {
-      id: 1,
-      date: "10",
-      month: "SEP",
-      user: "By Admin",
-      title: "7Slots Casino’da Canlı Casino Deneyimi",
-      points:
-        "Содержимое 7Slots Casino’da Canlı Casino Oyunları Canlı Rulet Nasıl Oynanır? Oyunun Temelleri Stratejiler...",
-    },
-    {
-      id: 2,
-      date: "09",
-      month: "SEP",
-      user: "By Admin",
-      title: "CIPA Safe Pharmacies",
-      points:
-        "CIPA Safe Pharmacies Sildenafil, sold under the brand name Viagra, among others, is a medication used to treat erectile dysfunction...",
-    },
-    {
-      id: 3,
-      date: "09",
-      month: "SEP",
-      user: "By Admin",
-      title: "Cialis vs. Viagra: Which Is Best? – Healthline",
-      points:
-        "Cialis vs. Viagra: Which Is Best? – Healthline tadalafil (Cialis) avanafil (Stendra) All of these medicines work by relaxing smooth muscles...",
-    },
-  ];
 
   return (
     <React.Fragment>
@@ -108,10 +68,10 @@ const HomeModule = () => {
           }}
           spaceBetween={30}
           // centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           effect={"fade"}
           onSlideChange={handleSlideChange}
           navigation={true}
@@ -264,7 +224,7 @@ const HomeModule = () => {
                       <div className="card square rounded-0">
                         <img
                           className={`gallery-img img-fluid mx-auto ${styles.servicesSwiperImg}`}
-                          src={DataRecoveryServicePng}
+                          src={HardWareSoftwareImg}
                           alt=""
                         />
                         <div className={styles.boxContent}>
@@ -276,7 +236,7 @@ const HomeModule = () => {
                       <div className="card square rounded-0">
                         <img
                           className={`gallery-img img-fluid mx-auto ${styles.servicesSwiperImg}`}
-                          src={ScreenRepairServicePng}
+                          src={VirusRecovery}
                           alt=""
                         />
 
@@ -308,7 +268,7 @@ const HomeModule = () => {
                 VR. Better user experiences, scalability, compliance with industry standards, and reduced long-term
                 costs are additional benefits.
               </p>
-              <Button className={`lightBtn mt-4 `} data-aos="fade-down">
+              <Button className={`lightBtn mt-4 `} data-aos="fade-down" onClick={() => navigate("/contactUs")}>
                 Contact Now
               </Button>
             </Container>
@@ -326,7 +286,7 @@ const HomeModule = () => {
               name in delivering reliable, high-quality service. Our team of certified professionals brings a wealth of
               knowledge and technical expertise to every repair job...
             </p>
-            <Button className={`lightBtn mt-4 `} data-aos="fade-down">
+            <Button className={`lightBtn mt-4 `} data-aos="fade-down" onClick={() => navigate("/aboutUs")}>
               Read More
             </Button>
           </Col>
@@ -339,7 +299,7 @@ const HomeModule = () => {
               rate, our clients consistently express their appreciation for the quality and care we put into each
               service...
             </p>
-            <Button className={`lightBtn mt-4 }`} data-aos="fade-down">
+            <Button className={`lightBtn mt-4 }`} data-aos="fade-down" onClick={() => navigate("/aboutUs")}>
               Read More
             </Button>
           </Col>
@@ -436,8 +396,10 @@ const HomeModule = () => {
           <h4 style={{ marginBottom: "2rem" }}>Troubles with DigitalSphere!!!</h4>
           <p style={{ marginBottom: "2rem" }}>Unveiling your laptop’s mysteries: common issues and solutions</p>
           <div className={`pt-4 pb-4 ${styles.btn}`} data-aos="fade-down">
-            <Button className={`lightBtn`}>Book A Meeting</Button>
-            <Button className="primaryBtn">Download Now</Button>
+            <Button className={`lightBtn`} onClick={() => navigate("/contactUs")}>
+              Book A Meeting
+            </Button>
+            {/* <Button className="primaryBtn">Download Now</Button> */}
           </div>
         </div>
         {/* <div className={`${styles.curveImg} ${styles.curveImgBottom}`}></div> */}

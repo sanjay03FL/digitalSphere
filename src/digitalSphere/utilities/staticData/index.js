@@ -53,12 +53,12 @@ const servicesDetails = [
       {
         title: "Laptop Screen Repair",
         desc: "We will replace your cracked or broken LCD screen. (Does not include new screen, which usually costs",
-        price: "$75.) — $90.00",
+        price: "$75.00 — $90.00",
       },
       {
         title: "Laptop Power Socket Repair",
         desc: "We will take apart & replace your laptop power socket (Does not include new socket, which usually costs ",
-        price: "$25.) — $90.00",
+        price: "$25.00 — $90.00",
       },
       {
         title: "Clean Out with Compressor Service",
@@ -213,7 +213,7 @@ const teamDetails = [
   {
     id: 2,
     name: "Philip",
-    role: "CEO & Founder",
+    role: "CO-Founder",
     img: PhilipTeam,
     details:
       "Philip is a stable force, offers a wealth of wisdom and experience that resonates with our mature clientele. With a calm, measured approach, he’s the rock of our team, helping ensure steady growth. When he’s not steering the ship at DigitalSphere, you can find him sailing the seas or enjoying a cold beer by the shore.",

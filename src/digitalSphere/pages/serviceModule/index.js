@@ -3,7 +3,7 @@ import CustomBreadcrumb from "../../components/layouts/breadcrumb";
 import styles from "../serviceModule/styles.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { staticData } from "../../utilities/staticData";
-import { OnSiteImg, CheckSvgIcon, HardWareSoftwareImg, ManServiceLapGif, ServiceLogo } from "../../components/config";
+import { OnSiteImg, CheckSvgIcon, ManServiceLapGif, ServiceLogo } from "../../components/config";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SimpleModal from "../../components/common/modal";
@@ -65,14 +65,6 @@ const ServiceModule = () => {
     );
   };
 
-  const ModalFooter = () => {
-    return (
-      <Button className="primaryBtn" style={{ padding: "0.5rem 1rem" }}>
-        close
-      </Button>
-    );
-  };
-
   return (
     <React.Fragment>
       <CustomBreadcrumb />
@@ -121,13 +113,13 @@ const ServiceModule = () => {
           <img src={OnSiteImg} className={styles.onSiteImg} data-aos="fade-down" alt="" />
           <div data-aos="fade-up">
             <h5 className={styles.title}>On Site</h5>
-            <h5 className="mb-4">Local Area Discount 0$ travel fee Within 5 miles</h5>
-            <h5 style={{ marginBottom: "2rem" }}>DIAGNOSIS</h5>
-            <div style={{ marginBottom: "1rem" }}>
+            <h5 style={{ marginBottom: "2rem" }}>Local Area Discount 0$ travel fee Within 5 miles</h5>
+            <h5>DIAGNOSIS</h5>
+            <div style={{ marginBottom: "0.5rem" }}>
               Priority Level Normal:One way - <span>100$/ hr + travel — Starting @ 50$</span>
             </div>
 
-            <div style={{ marginBottom: "1rem" }}>
+            <div style={{ marginBottom: "0.5rem" }}>
               Priority Level (Urgent) (Emergency Calls Off time) - <span>180$/hr + travel — Starting @ 80$</span>
             </div>
           </div>

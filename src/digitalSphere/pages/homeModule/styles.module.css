@@ -63,10 +63,13 @@
 }
 
 .boxContent {
+  font-family: "Poppins-SemiBold" !important;
+
   background-color: #013160;
   color: #fff;
   padding: 1rem;
   font-size: 14px !important;
+  letter-spacing: 0.03rem;
 }
 .sectionThird {
   background-color: #caf0f8;
@@ -132,6 +135,7 @@
   color: #969696;
   font-size: 14px;
   letter-spacing: 0.03rem;
+  text-align: justify;
 }
 .sectionFourth .keyPoints {
   color: var(--topHeader1Background);
@@ -224,6 +228,7 @@
   /* background-color: #94bfe842;
   background-blend-mode: exclusion; */
 }
+
 .img1 > .swiperContainer {
   align-items: start;
 }
@@ -245,13 +250,14 @@
   max-width: 600px;
   margin-top: 1rem;
   text-shadow: 7px -8px 8px #013160;
+  font-family: "Poppins-Bold" !important;
   /* color: #fff;
   letter-spacing: 0.1rem;
   background-color: #03045e38; */
   /* background-color: #ffffff30; */
 
   color: #000000;
-  letter-spacing: 0.03rem;
+  /* letter-spacing: 0.03rem; */
   background-color: #dee2e66e;
 }
 .img1 > .swiperContainer > .swiperText {

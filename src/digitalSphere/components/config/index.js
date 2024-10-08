@@ -35,6 +35,7 @@ import AlexTeam from "../../assets/images/png&jpg/Alex.png";
 import PhilipTeam from "../../assets/images/png&jpg/Philip.png";
 import LaptopUsingImg from "../../assets/images/png&jpg/laptopUsing.jpg";
 import BackSVGIcon from "../../assets/images/svg/backIcon.svg";
+import CoverPic from "../../assets/images/png&jpg/coverPic.png";
 
 export {
   PhoneSvgIcon,
@@ -72,4 +73,5 @@ export {
   PhilipTeam,
   LaptopUsingImg,
   BackSVGIcon,
+  CoverPic,
 };

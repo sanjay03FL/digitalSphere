@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { HardWareSoftwareImg } from "../../../components/config";
 import styles from "../styles.module.css";
 

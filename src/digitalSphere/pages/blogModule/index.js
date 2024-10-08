@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CustomBreadcrumb from "../../components/layouts/breadcrumb";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import styles from "../blogModule/styles.module.css";
 import { staticData } from "../../utilities/staticData";
 import StaySafeOnlineBlog from "./blogs/staySafeOnline";
