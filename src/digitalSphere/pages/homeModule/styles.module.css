@@ -57,7 +57,7 @@
 .servicesSwiperImg {
   width: 100% !important;
   height: 200px !important;
-  object-fit: fill !important;
+  object-fit: cover !important;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset !important;
 }
@@ -172,7 +172,7 @@
 }
 
 .sectionFiveth > .title {
-  text-shadow: 3px 3px 4px black;
+  /* text-shadow: 3px 3px 4px black; */
   font-weight: 700;
   font-size: 50px;
   line-height: 1.2em;
@@ -242,25 +242,27 @@
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
-  text-shadow: 3px 3px 4px #013160;
+  /* text-shadow: 3px 3px 4px #013160; */
 }
 
 .swiperText {
   font-size: 16px;
   max-width: 650px;
   margin-top: 2rem;
-  text-shadow: 7px -8px 8px #013160;
+  /* text-shadow: 7px -8px 8px #013160; */
   font-family: "Poppins-Regular" !important;
   color: #e2e2ff;
   letter-spacing: 0.05rem;
-  background-color: #06122ac9;
   line-height: 1.7rem;
 }
+
 .img1 > .swiperContainer > .swiperText {
   text-align: start;
+  background-color: #06122ac9;
 }
 .img2 > .swiperContainer > .swiperText {
   text-align: end;
+  background-color: #131a1d73;
 }
 .sectionCommitment {
   display: flex;
@@ -323,10 +325,10 @@
   margin-bottom: 0 !important;
   font-size: 20px;
   font-weight: 800;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.3rem;
 }
 .blogContainer > .date > span {
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.08rem;
   font-size: 12px !important;
 }
 .blogContainer > .blogUser {
@@ -364,6 +366,12 @@
   cursor: pointer;
 }
 
+.viewMore:hover {
+  width: fit-content;
+  color: var(--topHeader1Background) !important;
+  border-bottom: 1px #e63946;
+  border-bottom-style: outset;
+}
 @media only screen and (max-width: 1023px) {
   .swiperImgTop {
     height: 400px;

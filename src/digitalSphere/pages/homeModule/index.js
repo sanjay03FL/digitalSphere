@@ -15,12 +15,13 @@ import {
   MotherBoardServicePng,
   DataRecoveryServicePng,
   ScreenRepairServicePng,
-  ServiceBanner,
   ServiceCpuBanner,
   VirusRecovery,
   HardWareSoftwareImg,
   ChipBanner,
   BlackyBanner,
+  HardDiskRecovery,
+  LaptopUsingImg,
 } from "../../components/config";
 import styles from "./styles.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -70,10 +71,10 @@ const HomeModule = () => {
           }}
           spaceBetween={30}
           // centeredSlides={true}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           effect={"fade"}
           onSlideChange={handleSlideChange}
           navigation={true}
@@ -95,32 +96,65 @@ const HomeModule = () => {
                     Virus removal services and Screen repairing.
                   </p>
                 </div>
-                <Button className={`primaryBtn mt-4 ${activeIndex === 0 ? "fadeTop" : ""}`}>CONTACT US</Button>
+                <Button
+                  className={`primaryBtn mt-4 ${activeIndex === 0 ? "fadeTop" : ""}`}
+                  onClick={() => navigate("/contactUs")}
+                >
+                  CONTACT US
+                </Button>
               </Container>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div
               className={`${styles.swiperImgTop} ${styles.img2}`}
-              style={{ backgroundImage: `url(${BlackyBanner})` }}
+              style={{ backgroundImage: `url(${BlackyBanner} )` }}
             >
               <Container className={styles.swiperContainer}>
-                <div className={`${styles.swiperTitle} ${activeIndex === 1 ? "fadeLeft" : ""}`}>
+                <div className={`${styles.swiperTitle} ${activeIndex === 1 ? "fadeLeft" : ""}`}>Your Technology</div>
+                <div className={`${styles.swiperTitle} ${activeIndex === 1 ? "fadeLeft" : ""}`}>Our Priority</div>
+                <div className={`${styles.swiperText} ${activeIndex === 1 ? "fadeLeft" : ""}`}>
+                  <p>
+                    We ensure your tech runs smoothly, whether it’s repairs, upgrades, or maintenance, we’re here to
+                    keep you connected and focused on what matters.
+                  </p>
+                </div>
+                <Button
+                  className={`lightBtn mt-4 ${activeIndex === 1 ? "fadeTop" : ""}`}
+                  onClick={() => navigate("/contactUs")}
+                >
+                  CONTACT US
+                </Button>
+              </Container>
+            </div>
+          </SwiperSlide>
+          {/* <SwiperSlide className="h-100">
+            <div
+              className={`${styles.swiperImgTop} ${styles.img2}`}
+              style={{ backgroundImage: `url(${ServiceCpuBanner})` }}
+            >
+              <Container className={styles.swiperContainer}>
+                <div className={`${styles.swiperTitle} ${activeIndex === 0 ? "fadeRight" : ""}`}>
                   Your One-Stop Solution
                 </div>
-                <div className={`${styles.swiperTitle} ${activeIndex === 1 ? "fadeLeft" : ""}`}>
+                <div className={`${styles.swiperTitle} ${activeIndex === 0 ? "fadeRight" : ""}`}>
                   for all PC & Laptops
                 </div>
-                <div className={`${styles.swiperText} ${activeIndex === 1 ? "fadeLeft" : ""}`}>
+                <div className={`${styles.swiperText} ${activeIndex === 0 ? "fadeRight" : ""}`}>
                   <p>
                     Get your laptops and PCs repaired and fixed from The Digital Sphere. From laptop and PC repairing to
                     Virus removal services and Screen repairing.
                   </p>
                 </div>
-                <Button className={`primaryBtn mt-4 ${activeIndex === 1 ? "fadeTop" : ""}`}>CONTACT US</Button>
+                <Button
+                  className={`primaryBtn mt-4 ${activeIndex === 0 ? "fadeTop" : ""}`}
+                  onClick={() => navigate("/contactUs")}
+                >
+                  CONTACT US
+                </Button>
               </Container>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </React.Fragment>
 
@@ -176,7 +210,7 @@ const HomeModule = () => {
                       <div className="card square rounded-0">
                         <img
                           className={`gallery-img img-fluid mx-auto ${styles.servicesSwiperImg}`}
-                          src={CpuServicePng}
+                          src={LaptopUsingImg}
                           alt=""
                         />
                         <div className={styles.boxContent}>
@@ -200,7 +234,7 @@ const HomeModule = () => {
                       <div className="card square rounded-0">
                         <img
                           className={`gallery-img img-fluid mx-auto ${styles.servicesSwiperImg}`}
-                          src={DataRecoveryServicePng}
+                          src={HardDiskRecovery}
                           alt=""
                         />
                         <div className={styles.boxContent}>
@@ -407,13 +441,13 @@ const HomeModule = () => {
 
       <React.Fragment>
         <div className={styles.sectionSixth}>
-          <Container className={styles.containerSixth}>
+          <Container className={`mb-2 ${styles.containerSixth}`}>
             <h5 className={styles.title} data-aos="fade-right">
               Latest Blogs
             </h5>
             <Row>
               {staticData?.blogArray?.map((v, i) => (
-                <Col md={4} sm={12} className={styles.blogContainer} data-aos="fade-up">
+                <Col md={4} sm={12} className={styles.blogContainer} data-aos="fade-up" key={i}>
                   <p className={styles.date}>
                     <p>{getPastWeekDate("DATE", staticData?.blogArray.length - i)}</p>
                     <span>{getPastWeekDate("MONTH", staticData?.blogArray.length - i)}</span>

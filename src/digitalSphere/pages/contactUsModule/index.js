@@ -3,7 +3,6 @@ import CustomBreadcrumb from "../../components/layouts/breadcrumb";
 import { Button, Container, Form } from "react-bootstrap";
 import styles from "../contactUsModule/styles.module.css";
 import { LocationSvgIcon, MailSvgIcon, PhoneSvgIcon } from "../../components/config";
-import MapComponent from "../../components/common/googleMap";
 import { useNavigate } from "react-router-dom";
 
 const ContactUsModule = () => {
@@ -61,9 +60,6 @@ const ContactUsModule = () => {
             <Button className={`lightBtn`}>Submit</Button>
           </div>
         </Container>
-      </div>
-      <div>
-        <MapComponent />
       </div>
     </React.Fragment>
   );

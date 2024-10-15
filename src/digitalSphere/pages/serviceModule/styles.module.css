@@ -94,7 +94,7 @@
   margin-right: 3rem;
 }
 .onSiteSection > .container > div > .title {
-  text-shadow: 3px 3px 4px black;
+  /* text-shadow: 3px 3px 4px black; */
   font-weight: 700;
   font-size: 50px;
   line-height: 1.2em;

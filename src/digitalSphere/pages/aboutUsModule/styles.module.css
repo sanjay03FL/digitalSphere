@@ -43,9 +43,9 @@
 }
 .teamImg {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  background-color: #777;
+  height: 300px;
+  object-fit: contain;
+  background-color: #77777700;
 }
 .aboutTeamCard > h3 {
   margin-top: 2rem;
@@ -73,8 +73,7 @@
   margin: 2rem 0;
   text-align: center;
   font-family: "Poppins-SemiBold" !important;
-    color: #212529;
-
+  color: #212529;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -92,5 +91,6 @@
   }
   .teamImg {
     height: 300px;
+    object-fit: cover;
   }
 }

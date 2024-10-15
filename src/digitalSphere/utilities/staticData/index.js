@@ -3,6 +3,7 @@ import {
   AlexTeam,
   CpuServicePng,
   DataRecoveryServicePng,
+  HardDiskRecovery,
   HardWareSoftwareImg,
   InternetFirewall,
   LaptopUsingImg,
@@ -26,7 +27,7 @@ const servicesDetails = [
   {
     id: 1,
     name: "Desktop / Laptop / All-in-Ones Repair",
-    img: CpuServicePng,
+    img: LaptopUsingImg,
     details: [
       {
         title: "Quick Service",
@@ -114,7 +115,7 @@ const servicesDetails = [
   {
     id: 5,
     name: "Data Recovery Services",
-    img: DataRecoveryServicePng,
+    img: HardDiskRecovery,
     details: [
       {
         title: "System Backup",

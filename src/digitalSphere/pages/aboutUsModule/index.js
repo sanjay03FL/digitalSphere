@@ -1,7 +1,7 @@
 import React from "react";
 import CustomBreadcrumb from "../../components/layouts/breadcrumb";
 import { Container } from "react-bootstrap";
-import { BusinessGuyJpg, CyberGuy, ManServiceLapGif } from "../../components/config";
+import { BlackyBanner, ServiceBanner } from "../../components/config";
 import styles from "../aboutUsModule/styles.module.css";
 import { staticData } from "../../utilities/staticData";
 const AboutUsModule = () => {
@@ -10,7 +10,7 @@ const AboutUsModule = () => {
       <CustomBreadcrumb />
       <Container className="fadeTop">
         <div className={styles.aboutCompanyContainer}>
-          <img src={ManServiceLapGif} alt="" className={styles.companyImg} />
+          <img src={ServiceBanner} alt="" className={styles.companyImg} />
           <div>
             <p>
               Welcome to DigitalSphere, your premier destination for top-notch computer repair services in Florida. With

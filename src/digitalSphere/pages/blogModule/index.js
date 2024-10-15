@@ -59,7 +59,7 @@ const BlogModule = () => {
             <div className={styles.blogContainer}>
               <div className={styles.blogLeft}>
                 {staticData?.blogArray?.map((v, i) => (
-                  <div className={styles.blogContents}>
+                  <div className={styles.blogContents} key={i}>
                     <img src={v.img} alt="" />
                     <h3>{v.name}</h3>
                     <h5>{v.title}</h5>
@@ -74,7 +74,7 @@ const BlogModule = () => {
                 <div className={styles.recentCard}>
                   <h5>Recent Posts</h5>
                   {staticData?.blogArray?.map((v, i) => (
-                    <div>
+                    <div key={i}>
                       <span>{v.name}</span>
                       <ul>
                         <li>{v.title}</li>
