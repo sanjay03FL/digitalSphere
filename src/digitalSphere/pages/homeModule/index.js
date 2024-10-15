@@ -19,6 +19,8 @@ import {
   ServiceCpuBanner,
   VirusRecovery,
   HardWareSoftwareImg,
+  ChipBanner,
+  BlackyBanner,
 } from "../../components/config";
 import styles from "./styles.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -79,10 +81,7 @@ const HomeModule = () => {
           className={styles.mySwiperFirstSection}
         >
           <SwiperSlide className="h-100">
-            <div
-              className={`${styles.swiperImgTop} ${styles.img1}`}
-              style={{ backgroundImage: `url(${ServiceBanner})` }}
-            >
+            <div className={`${styles.swiperImgTop} ${styles.img1}`} style={{ backgroundImage: `url(${ChipBanner})` }}>
               <Container className={styles.swiperContainer}>
                 <div className={`${styles.swiperTitle} ${activeIndex === 0 ? "fadeRight" : ""}`}>
                   Your One-Stop Solution
@@ -103,7 +102,7 @@ const HomeModule = () => {
           <SwiperSlide>
             <div
               className={`${styles.swiperImgTop} ${styles.img2}`}
-              style={{ backgroundImage: `url(${ServiceCpuBanner})` }}
+              style={{ backgroundImage: `url(${BlackyBanner})` }}
             >
               <Container className={styles.swiperContainer}>
                 <div className={`${styles.swiperTitle} ${activeIndex === 1 ? "fadeLeft" : ""}`}>
@@ -124,6 +123,7 @@ const HomeModule = () => {
           </SwiperSlide>
         </Swiper>
       </React.Fragment>
+
       <React.Fragment>
         {/* SECOND SECTION  */}
         <div className={styles.sectionTwo}>

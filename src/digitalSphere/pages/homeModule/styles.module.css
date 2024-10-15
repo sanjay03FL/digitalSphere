@@ -217,6 +217,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .swiperImgTop {
   width: 100%;
@@ -225,8 +226,8 @@
   background-repeat: no-repeat !important;
   background-position: center !important;
   filter: brightness(0.9);
-  /* background-color: #94bfe842;
-  background-blend-mode: exclusion; */
+  background-blend-mode: multiply;
+  background-color: #01316075 !important;
 }
 
 .img1 > .swiperContainer {
@@ -245,20 +246,15 @@
 }
 
 .swiperText {
-  /* font-size: 16px;
-  font-weight: 600; */
-  max-width: 600px;
-  margin-top: 1rem;
+  font-size: 16px;
+  max-width: 650px;
+  margin-top: 2rem;
   text-shadow: 7px -8px 8px #013160;
-  font-family: "Poppins-Bold" !important;
-  /* color: #fff;
-  letter-spacing: 0.1rem;
-  background-color: #03045e38; */
-  /* background-color: #ffffff30; */
-
-  color: #000000;
-  /* letter-spacing: 0.03rem; */
-  background-color: #dee2e66e;
+  font-family: "Poppins-Regular" !important;
+  color: #e2e2ff;
+  letter-spacing: 0.05rem;
+  background-color: #06122ac9;
+  line-height: 1.7rem;
 }
 .img1 > .swiperContainer > .swiperText {
   text-align: start;

@@ -36,7 +36,8 @@ import PhilipTeam from "../../assets/images/png&jpg/Philip.png";
 import LaptopUsingImg from "../../assets/images/png&jpg/laptopUsing.jpg";
 import BackSVGIcon from "../../assets/images/svg/backIcon.svg";
 import CoverPic from "../../assets/images/png&jpg/coverPic.png";
-
+import ChipBanner from "../../assets/images/png&jpg/chipBanner.jpg";
+import BlackyBanner from "../../assets/images/png&jpg/blackyBanner.jpg";
 export {
   PhoneSvgIcon,
   MailSvgIcon,
@@ -74,4 +75,6 @@ export {
   LaptopUsingImg,
   BackSVGIcon,
   CoverPic,
+  ChipBanner,
+  BlackyBanner,
 };
