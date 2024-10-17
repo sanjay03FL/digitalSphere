@@ -120,4 +120,14 @@
   .sectionFooter {
     flex-direction: column;
   }
+  .breadcrumbBanner {
+    height: 150px;
+  }
+  .breadcrumbBanner > .customContainer > div > .title {
+    font-size: 28px;
+
+  }
+  .breadcrumbBanner > .customContainer > div > .path {
+    font-size: 14px;
+  }
 }
