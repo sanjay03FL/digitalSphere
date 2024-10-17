@@ -399,13 +399,13 @@
     height: 500px;
   }
   .sectionFiveth > .title {
-    font-size: 38px;
+    font-size: 32px;
   }
   .sectionFiveth > h4 {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
   .sectionFiveth > p {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   .sectionFiveth > .btn {
     flex-direction: column;
