@@ -3,6 +3,7 @@ import {
   AlexTeam,
   CpuServicePng,
   DataRecoveryServicePng,
+  GamingImg,
   HardDiskRecovery,
   HardWareSoftwareImg,
   InternetFirewall,
@@ -134,6 +135,18 @@ const servicesDetails = [
       },
     ],
   },
+  {
+    id: 6,
+    name: "Custom PC Builds",
+    img: GamingImg,
+    details: [
+      {
+        title: "Custom PC Builds",
+        desc: " Whether you’re a gamer or a professional, we can build custom PCs tailored to your exact needs and specifications.",
+        price: "",
+      },
+    ],
+  },
 ];
 
 const internetServiceDetails = [
@@ -158,7 +171,7 @@ const internetServiceDetails = [
     img: SurveillanceInstallation,
     details:
       "Enhance the security of your home or business with our tailored security solutions. Monitor your property from anywhere in the world using your smartphone, tablet, or computer, with full audio and video capabilities. Additionally, all activity is recorded onsite or offsite for your peace of mind. Receive instant notifications in case of any security breaches.",
-    price: "$",
+    price: "",
   },
 ];
 

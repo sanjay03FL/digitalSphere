@@ -16,8 +16,8 @@ const ContactUsModule = () => {
             <h5>TALK TO A SPECIALIST</h5>
             <h2>Let's Talk Business</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismodac, finibus
-              vitae dui rem ipsum dolor sit amet, consectetur adipiscing elit.
+              Have a computer issue? Our experts are here to diagnose and repair your devices. Connect with us and get
+              the right solution fast!
             </p>
             <Button className={`lightBtn`} onClick={() => navigate("/aboutUs")}>
               About Us
@@ -45,8 +45,8 @@ const ContactUsModule = () => {
             <h5>REQUEST A CALL</h5>
             <h2>We call you back</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismodac,
-              <br /> finibus vitae dui rem ipsum dolor sit amet.
+              Request a callback, and one of our IT specialists will contact you shortly to help with your computer
+              repair or service needs.
             </p>
             <Form.Control type="text" className={styles.contactCallInputField} placeholder="* Full Name" />
             <Form.Control type="mail" className={styles.contactCallInputField} placeholder="* Email Address" />

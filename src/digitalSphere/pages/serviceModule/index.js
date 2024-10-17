@@ -40,14 +40,14 @@ const ServiceModule = () => {
                   <div key={i} className={styles.serviceCardDetails}>
                     <span>{v?.title}</span>
                     <p>{v?.desc}</p>
-                    <p className={styles.price}>Price : {v?.price}</p>
+                    {v?.price && <p className={styles.price}>Price : {v?.price}</p>}
                   </div>
                 ))
               ) : (
                 <div className={styles.serviceCardDetails}>
                   <span>{viewInfo?.details?.name}</span>
                   <p>{viewInfo?.details?.details}</p>
-                  <p className={styles.price}>Price : {viewInfo?.details?.price}</p>
+                  {viewInfo?.details?.price && <p className={styles.price}>Price : {viewInfo?.details?.price}</p>}
                 </div>
               )}
             </div>

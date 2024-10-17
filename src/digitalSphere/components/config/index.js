@@ -40,6 +40,7 @@ import ChipBanner from "../../assets/images/png&jpg/chipBanner.jpg";
 import BlackyBanner from "../../assets/images/png&jpg/blackyBanner.jpg";
 import ChipFire from "../../assets/images/png&jpg/chipFire.jpg";
 import HardDiskRecovery from "../../assets/images/png&jpg/hardDiskRecovery.jpg";
+import GamingImg from "../../assets/images/png&jpg/gaming.jpg";
 
 export {
   PhoneSvgIcon,
@@ -82,4 +83,5 @@ export {
   BlackyBanner,
   ChipFire,
   HardDiskRecovery,
+  GamingImg,
 };

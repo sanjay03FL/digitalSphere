@@ -327,7 +327,7 @@ const HomeModule = () => {
         </Row>
         <Row className={styles.sectionCommitment}>
           <Col md={6} sm={12} className={styles.textContainer}>
-            <h3 className={styles.heading}> 95% Customer Satisfaction Rate</h3>
+            <h3 className={styles.heading}> 99% Customer Satisfaction Rate</h3>
             <p className={styles.points}>
               Customer satisfaction is at the core of what we do at DigitalSphere. With a 95% customer satisfaction
               rate, our clients consistently express their appreciation for the quality and care we put into each

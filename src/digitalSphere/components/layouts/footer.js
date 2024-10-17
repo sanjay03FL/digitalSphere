@@ -24,7 +24,7 @@ const Footer = () => {
     lat: -3.745,
     lng: -38.523,
   };
-
+//  sampleId= "AIzaSyCC-uuloWLLaVNjbQjd9Mghy5BLbmB5ngY"
   return (
     <React.Fragment>
       <div style={{ display: window.location.pathname !== "/contactUs" ? "none" : "initial" }}>
