@@ -34,7 +34,7 @@ const ContactUsModule = () => {
             </span>
             <span className="d-flex align-items-center">
               <img className={`${styles.locationImg} me-3`} src={LocationSvgIcon} width={25} height={25} alt="" />
-              <span>Lakeland, FL, US</span>
+              <span>415 E suit 217 main st Bartow 33830 Lakeland, FL</span>
             </span>
           </div>
         </Container>

@@ -2,7 +2,6 @@ import React from "react";
 import { ModalDialog, ModalHeader, ModalBody, ModalFooter, Modal } from "react-bootstrap";
 const SimpleModal = (props) => {
   const { modalHeader, modalBody, modalFooter, open, close, modalSize } = props;
-  console.log(open, "open");
 
   return (
     <div>

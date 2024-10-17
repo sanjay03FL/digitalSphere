@@ -24,7 +24,7 @@ const Footer = () => {
     lat: -3.745,
     lng: -38.523,
   };
-//  sampleId= "AIzaSyCC-uuloWLLaVNjbQjd9Mghy5BLbmB5ngY"
+  //  sampleId= "AIzaSyCC-uuloWLLaVNjbQjd9Mghy5BLbmB5ngY"
   return (
     <React.Fragment>
       <div style={{ display: window.location.pathname !== "/contactUs" ? "none" : "initial" }}>
@@ -64,7 +64,7 @@ const Footer = () => {
               <h5>Contact Us</h5>
               <p className="d-flex align-items-center">
                 <img src={LocationSvgIcon} width={15} height={15} className="footerIconSvg me-1" alt="" />
-                &nbsp;Lakeland, FL, US
+                &nbsp;415 E suit 217 main st Bartow 33830 Lakeland, FL
               </p>
               <p className="d-flex align-items-center">
                 <img src={MailSvgIcon} width={15} height={15} className="footerIconSvg me-1" alt="" />

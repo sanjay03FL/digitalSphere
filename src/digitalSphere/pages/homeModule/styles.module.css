@@ -372,6 +372,11 @@
   border-bottom: 1px #e63946;
   border-bottom-style: outset;
 }
+@media only screen and (max-width: 767px) {
+  .sectionCommitment > .imgContainer {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1023px) {
   .swiperImgTop {
     height: 400px;
@@ -381,6 +386,10 @@
   }
   .swiperImgTop > .swiperContainer > .swiperText {
     font-size: 12px;
+  }
+
+  .sectionTwo > .container > span > p {
+    text-align: justify;
   }
 
   .sectionTwo > .container {
