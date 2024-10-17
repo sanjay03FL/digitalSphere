@@ -72,7 +72,7 @@ const HomeModule = () => {
           spaceBetween={30}
           // centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
           }}
           effect={"fade"}
@@ -426,8 +426,8 @@ const HomeModule = () => {
       <React.Fragment>
         <div className={styles.sectionFiveth}>
           <h5 className={styles.title}>Ready to Boost Your Business?</h5>
-          <h4 className="mb-2">Is your laptop feeling laggy in florida? unmask tech</h4>
-          <h4 style={{ marginBottom: "2rem" }}>Troubles with DigitalSphere!!!</h4>
+          <h4 className="mb-2">Is your laptop feeling laggy</h4>
+          <h4 style={{ marginBottom: "2rem" }}>unmask Tech Troubles with DigitalSphere!</h4>
           <p style={{ marginBottom: "2rem" }}>Unveiling your laptop’s mysteries: common issues and solutions</p>
           <div className={`pt-4 pb-4 ${styles.btn}`} data-aos="fade-down">
             <Button className={`lightBtn`} onClick={() => navigate("/contactUs")}>

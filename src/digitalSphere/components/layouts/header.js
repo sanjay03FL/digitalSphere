@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { MailSvgIcon, PhoneSvgIcon, SphereSvgIcon } from "../config";
 import styles from "../layouts/style.module.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import navMenuArray, { staticData } from "../../utilities/staticData";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 const Header = () => {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeNavbar = (link) => {
+    setIsOpen(false); // Close the navbar
+    navigate(link);
+    // Manually collapse the navbar using Bootstrap's JavaScript API
+    const navbarCollapse = document.getElementById("navbarTogglerDemo02");
+    if (navbarCollapse.classList.contains("show")) {
+      const collapseInstance = new window.bootstrap.Collapse(navbarCollapse);
+      collapseInstance.hide();
+    }
+  };
   return (
     <React.Fragment>
       <div className={`top-header ${styles.headerTop}`}>
@@ -34,7 +50,8 @@ const Header = () => {
             data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
+            aria-expanded={isOpen}
+            onClick={toggleNavbar}
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
@@ -43,26 +60,15 @@ const Header = () => {
             {staticData?.navMenuArray?.map((v, i) => (
               <span
                 key={i}
+                to={v.link}
                 className={`nav-menu-item ${styles.navItem} ${
                   window.location.pathname === v.link ? styles.navActiveItem : styles.navInActiveItem
                 } ${i === 4 && "me-0"}`}
-                onClick={() => navigate(v.link)}
+                onClick={() => closeNavbar(v.link)}
               >
                 {v.name}
               </span>
             ))}
-            {/* <span className={`nav-menu-item ${styles.navItem} ${styles.navActiveItem}`} onClick={() => navigate("/")}>
-              Home
-            </span>
-            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}>About Us</span>
-            <span
-              className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}
-              onClick={() => navigate("/service")}
-            >
-              Service
-            </span>
-            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem}`}>Blog</span>
-            <span className={`nav-menu-item ${styles.navItem} ${styles.navInActiveItem} me-0`}>Contact Us</span> */}
           </div>
         </Container>
       </nav>
