@@ -2,19 +2,12 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { LogoDSSvgIcon, MailSvgIcon, PhoneSvgIcon, SphereSvgIcon } from "../config";
 import styles from "../layouts/style.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import navMenuArray, { staticData } from "../../utilities/staticData";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 const Header = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
 
   const closeNavbar = (link) => {
-    setIsOpen(false); // Close the navbar
     navigate(link);
     // Manually collapse the navbar using Bootstrap's JavaScript API
     const navbarCollapse = document.getElementById("navbarTogglerDemo02");
@@ -41,7 +34,7 @@ const Header = () => {
       <nav className={`navbar sticky-top navbar-expand-lg navbar-light ${styles.headerBottom} flex-column`}>
         <Container style={{ marginBottom: "0.5rem" }}>
           <div className="d-flex align-items-center">
-            <img className="top-footer-sphere me-1" style={{ width: "80%" }} src={LogoDSSvgIcon} alt="sphere" />
+            <img className="top-footer-sphere me-1" width={250} src={LogoDSSvgIcon} alt="sphere" />
             {/* &nbsp; <span className={styles.headerBottomTitle}>DIGITALSPHERE</span> */}
           </div>
           <button
@@ -50,8 +43,7 @@ const Header = () => {
             data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02"
-            aria-expanded={isOpen}
-            onClick={toggleNavbar}
+            aria-expanded={false}
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
@@ -60,7 +52,7 @@ const Header = () => {
             {staticData?.navMenuArray?.map((v, i) => (
               <span
                 key={i}
-                to={v.link}
+                // to={v.link}
                 className={`nav-menu-item ${styles.navItem} ${
                   window.location.pathname === v.link ? styles.navActiveItem : styles.navInActiveItem
                 } ${i === 4 && "me-0"}`}
