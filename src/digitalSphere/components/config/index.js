@@ -29,6 +29,7 @@ import PasswordResetImg from "../../assets/images/png&jpg/passwordReset.jpg";
 import InternetFirewall from "../../assets/images/png&jpg/internetFirewall.jpg";
 import SurveillanceInstallation from "../../assets/images/png&jpg/cameraInstallation.jpeg";
 import ServiceLogo from "../../assets/images/png&jpg/serviceLogo.png";
+import LogoDSSvgIcon from "../../assets/images/svg/logoDs.svg";
 
 import AbrarTeam from "../../assets/images/png&jpg/Abrar.png";
 import AlexTeam from "../../assets/images/png&jpg/Alex.png";
@@ -41,6 +42,7 @@ import BlackyBanner from "../../assets/images/png&jpg/blackyBanner.jpg";
 import ChipFire from "../../assets/images/png&jpg/chipFire.jpg";
 import HardDiskRecovery from "../../assets/images/png&jpg/hardDiskRecovery.jpg";
 import GamingImg from "../../assets/images/png&jpg/gaming.jpg";
+import HardwareImg from "../../assets/images/png&jpg/hardwareAnimation.png";
 
 export {
   PhoneSvgIcon,
@@ -84,4 +86,6 @@ export {
   ChipFire,
   HardDiskRecovery,
   GamingImg,
+  HardwareImg,
+  LogoDSSvgIcon,
 };

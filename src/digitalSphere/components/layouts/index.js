@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Header from "./header";
 import Footer from "./footer";
-
 const Layouts = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -15,6 +14,7 @@ const Layouts = () => {
   return (
     <div>
       <Header />
+
       <div>
         <Outlet />
       </div>

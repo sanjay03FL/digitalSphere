@@ -22,6 +22,7 @@ import {
   BlackyBanner,
   HardDiskRecovery,
   LaptopUsingImg,
+  HardwareImg,
 } from "../../components/config";
 import styles from "./styles.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -258,7 +259,7 @@ const HomeModule = () => {
                       <div className="card square rounded-0">
                         <img
                           className={`gallery-img img-fluid mx-auto ${styles.servicesSwiperImg}`}
-                          src={HardWareSoftwareImg}
+                          src={HardwareImg}
                           alt=""
                         />
                         <div className={styles.boxContent}>

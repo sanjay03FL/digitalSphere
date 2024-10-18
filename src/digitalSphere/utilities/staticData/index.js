@@ -5,6 +5,7 @@ import {
   DataRecoveryServicePng,
   GamingImg,
   HardDiskRecovery,
+  HardwareImg,
   HardWareSoftwareImg,
   InternetFirewall,
   LaptopUsingImg,
@@ -72,7 +73,7 @@ const servicesDetails = [
   {
     id: 3,
     name: "Hardware / Software Upgrades",
-    img: HardWareSoftwareImg,
+    img: HardwareImg,
     details: [
       {
         title: "Operating System Installation",

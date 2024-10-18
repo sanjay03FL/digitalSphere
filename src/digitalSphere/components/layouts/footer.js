@@ -21,8 +21,8 @@ const Footer = () => {
   };
 
   const center = {
-    lat: -3.745,
-    lng: -38.523,
+    lat: 27.89632,
+    lng: -81.84042,
   };
   //  sampleId= "AIzaSyCC-uuloWLLaVNjbQjd9Mghy5BLbmB5ngY"
   return (
@@ -30,7 +30,7 @@ const Footer = () => {
       <div style={{ display: window.location.pathname !== "/contactUs" ? "none" : "initial" }}>
         <LoadScript googleMapsApiKey="AIzaSyBaNM8pSvmZMCnMCG9zpYwuGcTmm1Eprnc">
           <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-            {/* <Marker position={center} /> */}
+            <Marker position={center} />
           </GoogleMap>
         </LoadScript>
       </div>
@@ -71,12 +71,19 @@ const Footer = () => {
                 &nbsp;info@thedigitalsphere.us
               </p>
               <h5>Follow Us</h5>
-              <p className="d-flex">
+              <span className="d-flex">
                 <img src={FacebookSVGIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
                 <img src={TwitterSvgIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
                 <img src={LinkedinSVGIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
-                <img src={InstragramSvgIcon} width={20} height={20} className="footerIconSvg me-1" alt="" />{" "}
-              </p>
+
+                <a
+                  target="_blank"
+                  rel="linkedIn"
+                  href="https://www.linkedin.com/company/thedigitalsphere?trk=blended-typeahead"
+                >
+                  <img src={InstragramSvgIcon} width={20} height={20} className="footerIconSvg me-1" alt="" />
+                </a>
+              </span>
             </div>
           </div>
           <div className={styles.lastSectionFooter}>Copyright © 2023 | Powered by www.thedigitalsphere.us</div>

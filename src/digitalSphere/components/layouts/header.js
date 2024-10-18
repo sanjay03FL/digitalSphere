@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-import { MailSvgIcon, PhoneSvgIcon, SphereSvgIcon } from "../config";
+import { LogoDSSvgIcon, MailSvgIcon, PhoneSvgIcon, SphereSvgIcon } from "../config";
 import styles from "../layouts/style.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import navMenuArray, { staticData } from "../../utilities/staticData";
@@ -38,11 +38,11 @@ const Header = () => {
           </div>
         </Container>
       </div>
-      <nav className={`navbar sticky-top navbar-expand-lg navbar-light ${styles.headerBottom}`}>
-        <Container>
+      <nav className={`navbar sticky-top navbar-expand-lg navbar-light ${styles.headerBottom} flex-column`}>
+        <Container style={{ marginBottom: "0.5rem" }}>
           <div className="d-flex align-items-center">
-            <img className="top-footer-sphere me-1" src={SphereSvgIcon} width={60} height={60} alt="sphere" />
-            &nbsp; <span className={styles.headerBottomTitle}>DIGITALSPHERE</span>
+            <img className="top-footer-sphere me-1" style={{ width: "80%" }} src={LogoDSSvgIcon} alt="sphere" />
+            {/* &nbsp; <span className={styles.headerBottomTitle}>DIGITALSPHERE</span> */}
           </div>
           <button
             className="navbar-toggler"
@@ -71,6 +71,9 @@ const Header = () => {
             ))}
           </div>
         </Container>
+        <div className={`${styles.comingSoon}`}>
+          <marquee>* We are now available for online services! Store location coming soon – stay tuned! *</marquee>
+        </div>
       </nav>
     </React.Fragment>
   );
