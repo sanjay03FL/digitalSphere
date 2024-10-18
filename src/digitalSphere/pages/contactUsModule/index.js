@@ -25,15 +25,15 @@ const ContactUsModule = () => {
           </div>
           <div className={`d-flex flex-column ${styles.contactSecondHalf}`}>
             <span className="d-flex align-items-center">
-              <img className={`${styles.phoneImg} me-3`} src={PhoneSvgIcon} width={25} height={25} alt="" />
+              <img className={`${styles.phoneImg} me-3`} src={PhoneSvgIcon} alt="" />
               <span>+1-302-390-7520</span>
             </span>
             <span className="d-flex align-items-center">
-              <img className={`${styles.mailImg} me-3`} src={MailSvgIcon} width={25} height={25} alt="" />
+              <img className={`${styles.mailImg} me-3`} src={MailSvgIcon} alt="" />
               <span>info@thedigitalsphere.us</span>
             </span>
             <span className="d-flex align-items-center">
-              <img className={`${styles.locationImg} me-3`} src={LocationSvgIcon} width={25} height={25} alt="" />
+              <img className={`${styles.locationImg} me-3`} src={LocationSvgIcon} alt="" />
               <span>415 E suit 217 main st Bartow 33830 Lakeland, FL</span>
             </span>
           </div>

@@ -43,13 +43,15 @@
 .locationImg {
   filter: brightness(0) saturate(100%) invert(99%) sepia(2%) saturate(7352%) hue-rotate(178deg) brightness(131%)
     contrast(100%);
+  width: 25px;
 }
 .contactCallSection {
+  padding: 1rem;
   background-color: var(--primaryColor);
 }
-.contactCallContainer {
+/* .contactCallContainer {
   padding: 2rem 0;
-}
+} */
 .contactCallSection > .contactCallContainer > div > h5 {
   color: #fff !important;
   font-family: "Poppins-Bold" !important;
@@ -104,5 +106,13 @@
   }
   .contactSection > .contactContainer > .contactSecondHalf {
     margin-left: 0rem;
+  }
+  .phoneImg,
+  .mailImg,
+  .locationImg {
+    width: 18px;
+  }
+  .contactSection > .contactContainer > .contactSecondHalf > span > span {
+    font-size: 16px;
   }
 }
