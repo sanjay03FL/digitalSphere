@@ -8,24 +8,26 @@ const AboutUsModule = () => {
   return (
     <React.Fragment>
       <CustomBreadcrumb />
-      <Container className="fadeTop">
-        <div className={styles.aboutCompanyContainer}>
-          <img src={ServiceBanner} alt="" className={styles.companyImg} />
-          <div>
-            <p>
-              Welcome to DigitalSphere, your premier destination for top-notch computer repair services in Florida. With
-              a team of skilled technicians and cutting-edge technology, we are dedicated to providing efficient
-              solutions for all your computer-related issues
-            </p>
-            <p>
-              At DigitalSphere, customer satisfaction is our top priority. Whether it's a hardware malfunction or
-              software glitch, you can trust us to deliver reliable and affordable repair services tailored to meet your
-              needs.
-            </p>
-            <p>Contact us today and let us take care of all your Tech needs!</p>
+      <div style={{ overflow: "hidden" }}>
+        <Container className="fadeTop">
+          <div className={styles.aboutCompanyContainer}>
+            <img src={ServiceBanner} alt="" className={styles.companyImg} />
+            <div>
+              <p>
+                Welcome to DigitalSphere, your premier destination for top-notch computer repair services in Florida.
+                With a team of skilled technicians and cutting-edge technology, we are dedicated to providing efficient
+                solutions for all your computer-related issues
+              </p>
+              <p>
+                At DigitalSphere, customer satisfaction is our top priority. Whether it's a hardware malfunction or
+                software glitch, you can trust us to deliver reliable and affordable repair services tailored to meet
+                your needs.
+              </p>
+              <p>Contact us today and let us take care of all your Tech needs!</p>
+            </div>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
       <div className={styles.aboutTeamContainer}>
         <h3>MEET OUR TEAM</h3>
         <div className={styles.aboutTeamDetails}>

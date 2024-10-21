@@ -10,34 +10,36 @@ const ContactUsModule = () => {
   return (
     <React.Fragment>
       <CustomBreadcrumb />
-      <div className={`fadeTop ${styles.contactSection}`}>
-        <Container className={styles.contactContainer}>
-          <div className={`d-flex flex-column ${styles.contactFirstHalf}`}>
-            <h5>TALK TO A SPECIALIST</h5>
-            <h2>Let's Talk Business</h2>
-            <p>
-              Have a computer issue? Our experts are here to diagnose and repair your devices. Connect with us and get
-              the right solution fast!
-            </p>
-            <Button className={`lightBtn`} onClick={() => navigate("/aboutUs")}>
-              About Us
-            </Button>
-          </div>
-          <div className={`d-flex flex-column ${styles.contactSecondHalf}`}>
-            <span className="d-flex align-items-center">
-              <img className={`${styles.phoneImg} me-3`} src={PhoneSvgIcon} alt="" />
-              <span>+1-302-390-7520</span>
-            </span>
-            <span className="d-flex align-items-center">
-              <img className={`${styles.mailImg} me-3`} src={MailSvgIcon} alt="" />
-              <span>info@thedigitalsphere.us</span>
-            </span>
-            <span className="d-flex align-items-center">
-              <img className={`${styles.locationImg} me-3`} src={LocationSvgIcon} alt="" />
-              <span>415 E suit 217 main st Bartow 33830 Lakeland, FL</span>
-            </span>
-          </div>
-        </Container>
+      <div style={{ overflow: "hidden" }}>
+        <div className={`fadeTop ${styles.contactSection}`}>
+          <Container className={styles.contactContainer}>
+            <div className={`d-flex flex-column ${styles.contactFirstHalf}`}>
+              <h5>TALK TO A SPECIALIST</h5>
+              <h2>Let's Talk Business</h2>
+              <p>
+                Have a computer issue? Our experts are here to diagnose and repair your devices. Connect with us and get
+                the right solution fast!
+              </p>
+              <Button className={`lightBtn`} onClick={() => navigate("/aboutUs")}>
+                About Us
+              </Button>
+            </div>
+            <div className={`d-flex flex-column ${styles.contactSecondHalf}`}>
+              <span className="d-flex align-items-center">
+                <img className={`${styles.phoneImg} me-3`} src={PhoneSvgIcon} alt="" />
+                <span>+1-302-390-7520</span>
+              </span>
+              <span className="d-flex align-items-center">
+                <img className={`${styles.mailImg} me-3`} src={MailSvgIcon} alt="" />
+                <span>info@thedigitalsphere.us</span>
+              </span>
+              <span className="d-flex align-items-center">
+                <img className={`${styles.locationImg} me-3`} src={LocationSvgIcon} alt="" />
+                <span>415 E suit 217 main st Bartow 33830, FL</span>
+              </span>
+            </div>
+          </Container>
+        </div>
       </div>
       <div className={styles.contactCallSection}>
         <Container className={styles.contactCallContainer}>

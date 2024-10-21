@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
-import { LogoDSSvgIcon, MailSvgIcon, PhoneSvgIcon, SphereSvgIcon } from "../config";
+import { LogoDSSvgIcon, MailSvgIcon, PhoneSvgIcon } from "../config";
 import styles from "../layouts/style.module.css";
 import { useNavigate } from "react-router-dom";
-import navMenuArray, { staticData } from "../../utilities/staticData";
+import { staticData } from "../../utilities/staticData";
 const Header = () => {
   const navigate = useNavigate();
 
@@ -64,7 +64,7 @@ const Header = () => {
           </div>
         </Container>
         <div className={`${styles.comingSoon}`}>
-          <marquee>* We are now available for online services! Store location coming soon – stay tuned! *</marquee>
+          <marquee>* Currently available On-site (at your door step ) store Front coming soon. *</marquee>
         </div>
       </nav>
     </React.Fragment>

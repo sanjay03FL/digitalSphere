@@ -64,7 +64,7 @@ const Footer = () => {
               <h5>Contact Us</h5>
               <p className="d-flex align-items-center">
                 <img src={LocationSvgIcon} width={15} height={15} className="footerIconSvg me-1" alt="" />
-                &nbsp;415 E suit 217 main st Bartow 33830 Lakeland, FL
+                &nbsp;415 E suit 217 main st Bartow 33830, FL
               </p>
               <p className="d-flex align-items-center">
                 <img src={MailSvgIcon} width={15} height={15} className="footerIconSvg me-1" alt="" />
