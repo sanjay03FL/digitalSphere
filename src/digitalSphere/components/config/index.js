@@ -44,6 +44,8 @@ import HardDiskRecovery from "../../assets/images/png&jpg/hardDiskRecovery.jpg";
 import GamingImg from "../../assets/images/png&jpg/gaming.jpg";
 import HardwareImg from "../../assets/images/png&jpg/hardwareAnimation.png";
 
+import SuccessInfoGif from "../../assets/images/gif/successgif.gif";
+
 export {
   PhoneSvgIcon,
   MailSvgIcon,
@@ -88,4 +90,5 @@ export {
   GamingImg,
   HardwareImg,
   LogoDSSvgIcon,
+  SuccessInfoGif,
 };

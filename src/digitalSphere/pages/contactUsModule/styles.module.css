@@ -87,6 +87,12 @@
 .contactCallSection > .contactCallContainer > div > Button {
   margin-top: 1rem;
 }
+.contactCallSection > .contactCallContainer > div > .formError {
+  color: #ff031ec9 !important;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  font-size: 12px;
+}
 @media only screen and (max-width: 1023px) {
   .contactSection > .contactContainer {
     flex-direction: column;

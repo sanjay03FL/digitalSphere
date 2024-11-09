@@ -12,10 +12,10 @@ const Routing = () => {
       <Routes>
         <Route element={<Layouts />}>
           <Route index path="/" element={<HomeModule />} />
-          <Route index path="/aboutUs" element={<AboutUsModule />} />
-          <Route index path="/service" element={<ServiceModule />} />
-          <Route index path="/blog" element={<BlogModule />} />
-          <Route index path="/contactUs" element={<ContactUsModule />} />
+          <Route path="/aboutUs" element={<AboutUsModule />} />
+          <Route path="/service" element={<ServiceModule />} />
+          <Route path="/blog" element={<BlogModule />} />
+          <Route path="/contactUs" element={<ContactUsModule />} />
         </Route>
       </Routes>
     </BrowserRouter>
