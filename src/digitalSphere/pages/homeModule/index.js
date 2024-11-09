@@ -11,13 +11,9 @@ import "swiper/css/effect-fade";
 import "swiper/css/effect-flip";
 // import required modules
 import {
-  CpuServicePng,
   MotherBoardServicePng,
-  DataRecoveryServicePng,
   ScreenRepairServicePng,
-  ServiceCpuBanner,
   VirusRecovery,
-  HardWareSoftwareImg,
   ChipBanner,
   BlackyBanner,
   HardDiskRecovery,

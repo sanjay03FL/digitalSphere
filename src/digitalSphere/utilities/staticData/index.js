@@ -1,8 +1,6 @@
 import {
   AbrarTeam,
   AlexTeam,
-  CpuServicePng,
-  DataRecoveryServicePng,
   GamingImg,
   HardDiskRecovery,
   HardwareImg,
@@ -12,7 +10,6 @@ import {
   MotherBoardDark,
   PasswordResetImg,
   PhilipTeam,
-  ServiceGeneral,
   SurveillanceInstallation,
   VirusRecovery,
 } from "../../components/config";
