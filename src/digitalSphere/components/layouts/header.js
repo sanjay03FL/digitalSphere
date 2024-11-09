@@ -5,6 +5,7 @@ import styles from "../layouts/style.module.css";
 import { useNavigate } from "react-router-dom";
 import { staticData } from "../../utilities/staticData";
 const Header = () => {
+  console.log(window.location.pathname, "location");
   const navigate = useNavigate();
 
   const closeNavbar = (link) => {
