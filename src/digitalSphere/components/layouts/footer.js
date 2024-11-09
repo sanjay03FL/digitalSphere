@@ -71,18 +71,17 @@ const Footer = () => {
                 &nbsp;info@thedigitalsphere.us
               </p>
               <h5>Follow Us</h5>
-              <span className="d-flex">
+              <span className="d-flex align-items-center">
                 <img src={FacebookSVGIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
                 <img src={TwitterSvgIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
-                <img src={LinkedinSVGIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
-
                 <a
                   target="_blank"
-                  rel="linkedIn"
+                  rel="noopener noreferrer"
                   href="https://www.linkedin.com/company/thedigitalsphere?trk=blended-typeahead"
                 >
-                  <img src={InstragramSvgIcon} width={20} height={20} className="footerIconSvg me-1" alt="" />
+                  <img src={LinkedinSVGIcon} width={20} height={20} className="footerIconSvg me-4" alt="" />
                 </a>
+                <img src={InstragramSvgIcon} width={20} height={20} className="footerIconSvg me-1" alt="" />
               </span>
             </div>
           </div>

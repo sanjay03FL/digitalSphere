@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import navMenuArray, { staticData } from "../../utilities/staticData";
+import { staticData } from "../../utilities/staticData";
 import styles from "../layouts/style.module.css";
 const CustomBreadcrumb = () => {
   const breadcrumbName = () => {

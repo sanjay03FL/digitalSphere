@@ -1,7 +1,7 @@
 import React from "react";
 import CustomBreadcrumb from "../../components/layouts/breadcrumb";
 import { Container } from "react-bootstrap";
-import { BlackyBanner, ServiceBanner } from "../../components/config";
+import { ServiceBanner } from "../../components/config";
 import styles from "../aboutUsModule/styles.module.css";
 import { staticData } from "../../utilities/staticData";
 const AboutUsModule = () => {
